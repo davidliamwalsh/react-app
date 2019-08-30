@@ -1,0 +1,35 @@
+.c-slider {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  background: #ffff;
+
+  &__container  {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__item {
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .3s linear;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  
+    &--image {
+      width: 70%;
+      height: 85%;
+    }
+
+    &--current{
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.o-control__button {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark;
+  width: 20px;
+  height: 4px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+
+  &--lefttop,
+  &--rightbottom {
+    transform: rotate(150deg);
+  }
+  &--leftbottom,
+  &--righttop {
+    transform: rotate(30deg);
+  }
+  
+  &:hover {
+    color: $header-typewriter;
+    cursor: pointer;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
+
+.o-submit__btn {
+  background-color: $header-typewriter;
+  color: $light;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $link-hover-color;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,13 @@
+.c-container-article {
+  width: 85%;
+  margin: 0 auto;
+  color: $dark;
+  background-color: inherit;
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-container-article {
+    width: 65%;
+  }
+}

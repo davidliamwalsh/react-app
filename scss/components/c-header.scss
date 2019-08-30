@@ -1,0 +1,106 @@
+.c-header {
+
+  &__image {
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+    background: url("/static/header-image.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__intro {
+    margin: auto;
+    padding-top: 20vh;
+    text-align: center;
+    color: $light;
+    line-height: 2em;
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    span {
+      color: $header-typewriter;
+    }
+  }
+
+  &__title {
+    font-size: 1.2em;
+    letter-spacing: 6px;
+    line-height: 1em;
+    border-right: .15em solid $header-typewriter;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2.5s steps(12, end),
+    blink-caret .75s step-end infinite;
+  }
+
+  &__signup {
+    padding-top: 2.5em;
+    margin: 0 auto;
+    color: $light;
+
+    &__form {
+
+      &--field {
+        margin: 0 auto;
+        width: 250px;
+
+        &-input {
+          display: block;
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $tablet-break) {
+  .c-header {
+
+    &__name {
+      font-weight: bold;
+    font-size: 2em;
+    }
+    &__title {
+      font-size: 1.2em;
+    letter-spacing: 6px;
+    }
+    &__signup__form {
+      
+      &--field {
+        width: 350px;
+
+        &-label {
+          font-size: 20px;
+        }
+        &-input {
+          font-size: 15px;
+        }
+      }
+      &--submit {
+        font-size: 14px;
+      } 
+    }
+  }
+}

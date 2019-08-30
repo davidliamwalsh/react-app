@@ -1,0 +1,53 @@
+.c-comments {
+  min-height: calc(50vh - 10px);
+
+  &__form {
+    padding: .5em 0em;
+    margin: 0 0 .5em 0;
+    &--row {
+      padding: .5em 0em;
+    }
+    &--name {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    &--body {
+      width: 100%;
+      height: 150px;
+      margin: 8px 0;  
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+  }
+
+  &__comment {
+    padding: .5em 0em;
+
+    &__card {
+      padding: .5em 0em;
+      &--name {
+        font-weight: bold;
+      }
+      &--body {
+        padding: 0 0 .5em 0;
+      }
+      &--date {
+        color: $header-typewriter;
+      }
+    }
+  }
+}
+
+.new_comment {
+  margin: 1em 0;
+}

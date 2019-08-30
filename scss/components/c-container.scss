@@ -1,0 +1,18 @@
+.c-container {
+  width: 95%;
+  margin: 0 auto;
+  color: $dark;
+  min-height: 85vh;
+}
+
+.c-container-article {
+  background: $articlelight;
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-container {
+    width: 85%;
+    min-height: 85vh;
+  }
+}

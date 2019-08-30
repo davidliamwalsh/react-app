@@ -1,0 +1,37 @@
+.c-contact {
+  margin-top: 3em;
+
+  &__intro {
+    margin: auto;
+    width: 90%;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 18px;
+
+    hr {
+      margin: auto;
+      margin-top: 1em;
+      width: 70%;
+      height: 2px;
+      display: block;
+      border-top: 4px solid $header-typewriter;
+    }
+  }
+
+  &__form--container {
+    margin: auto;
+    width: 90%;
+    margin-top: 2em;
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+  }
+}

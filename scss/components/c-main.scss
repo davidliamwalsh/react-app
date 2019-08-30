@@ -1,0 +1,19 @@
+.c-main__head {
+  font-size: 26px;
+
+  &-line {
+    width: 4em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 4px solid $header-typewriter;
+    margin: .5em 0 2em 0;
+  }
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-main__head {
+    font-size: 30px;
+  }
+}

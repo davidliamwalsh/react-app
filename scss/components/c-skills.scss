@@ -1,0 +1,80 @@
+.c-skills {
+  margin-top: 3em;
+
+  &__container {
+    width: 90%;
+    margin: auto;
+    color: $light;
+
+    &__wrapper {
+      background-color: gray;
+      margin: 1em 0;
+      padding: 0;
+
+      div {
+        padding: .5em;
+        font-size: 13px;
+      }
+
+      &--right {
+        float: right;
+        font-size: 12px;
+        margin-top: 2px;
+      }
+
+      &--html {
+        background-color: #DC1E2F;
+
+        &-active {
+          width: 87%;
+          transition: 2s;
+          background-color: #DC1E2F;
+        }
+      }
+
+      &--css  {
+        background-color: #EAB034;
+        
+        &-active {
+          width: 70%;
+          transition: 2s;
+          background-color: #EAB034;
+        }
+      }
+
+      &--javascript  {
+        background-color: #6840D4;
+        
+        &-active {
+          width: 64%;
+          transition: 2s;
+          background-color: #6840D4;
+        }
+      }
+
+      &--ror {
+        background-color: #485769;
+       
+        &-active {
+          width: 50%;
+          transition: 2s;
+          background-color: #485769;
+        }
+      }
+
+      &--html,
+      &--css,
+      &--javascript,
+      &--ror {
+        width: 25%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-skills__container__wrapper div {
+    font-size: 15px; 
+  }
+}
