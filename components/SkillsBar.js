@@ -15,7 +15,11 @@ class SkillsBar extends Component {
       const javascript = () => {
         document.querySelector("div[data-behavior='bar_javascript']").className = "c-skills__container__wrapper--javascript-active"
       }
-      
+
+      const react = () => {
+        document.querySelector("div[data-behavior='bar_react']").className = "c-skills__container__wrapper--react-active";
+      }
+
       const ror = () => {
         document.querySelector("div[data-behavior='bar_ror']").className = "c-skills__container__wrapper--ror-active";
       }
@@ -23,7 +27,8 @@ class SkillsBar extends Component {
       setTimeout(html, 2000)
       setTimeout(css, 2200)
       setTimeout(javascript, 2400)
-      setTimeout(ror, 2600)
+      setTimeout(react, 2600)
+      setTimeout(ror, 2800)
     }
   }
 
@@ -36,14 +41,14 @@ class SkillsBar extends Component {
         <div className="c-skills__container__wrapper">
           <div data-behavior="bar_html" className="c-skills__container__wrapper--html">
             HTML
-            <span className="c-skills__container__wrapper--right">87%</span>
+            <span className="c-skills__container__wrapper--right">95%</span>
           </div>
         </div>
           
         <div className="c-skills__container__wrapper">
           <div data-behavior="bar_css" className="c-skills__container__wrapper--css">
             CSS
-            <span className="c-skills__container__wrapper--right">70%</span>
+            <span className="c-skills__container__wrapper--right">80%</span>
           </div>
         </div>
 
@@ -51,6 +56,13 @@ class SkillsBar extends Component {
           <div data-behavior="bar_javascript" className="c-skills__container__wrapper--javascript">
           <span>JScript</span>
             <span className="c-skills__container__wrapper--right">64%</span>
+          </div>
+        </div>
+
+        <div className="c-skills__container__wrapper">
+          <div data-behavior="bar_react" className="c-skills__container__wrapper--react">
+            React
+            <span className="c-skills__container__wrapper--right">25%</span>
           </div>
         </div>
 

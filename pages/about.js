@@ -17,7 +17,7 @@ class About extends Component {
         <h2 className="c-main__head">About Me</h2>
         <hr className="c-main__head-line" />
     
-        <div class="c-about__hero">
+        <div className="c-about__hero">
           <img src="/static/profile.png" className="c-about__hero--image" />
           <hr />
         </div>

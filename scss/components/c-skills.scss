@@ -4,7 +4,8 @@
   &__container {
     width: 90%;
     margin: auto;
-    color: $light;
+    color: $dark;
+    font-weight: bold;
 
     &__wrapper {
       background-color: gray;
@@ -23,50 +24,61 @@
       }
 
       &--html {
-        background-color: #DC1E2F;
+        background-color: #E54C26;
 
         &-active {
-          width: 87%;
+          width: 95%;
           transition: 2s;
-          background-color: #DC1E2F;
+          background-color: #E54C26;
         }
       }
 
       &--css  {
-        background-color: #EAB034;
+        background-color: #264DE4;
         
         &-active {
-          width: 70%;
+          width: 80%;
           transition: 2s;
-          background-color: #EAB034;
+          background-color: #264DE4;
         }
       }
 
       &--javascript  {
-        background-color: #6840D4;
+        background-color: #E8D64C;
         
         &-active {
           width: 64%;
           transition: 2s;
-          background-color: #6840D4;
+          background-color: #E8D64C;
+        }
+      }
+
+      &--react {
+        background-color: #5ED3F4;
+
+        &-active {
+          width: 25%;
+          transition: 2s;
+          background-color: #5ED3F4;
         }
       }
 
       &--ror {
-        background-color: #485769;
+        background-color: #E61522;
        
         &-active {
           width: 50%;
           transition: 2s;
-          background-color: #485769;
+          background-color: #E61522;
         }
       }
 
       &--html,
       &--css,
       &--javascript,
+      &--react,
       &--ror {
-        width: 25%;
+        width: 15%;
       }
     }
   }

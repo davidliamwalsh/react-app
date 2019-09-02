@@ -21,8 +21,8 @@ class Index extends Component {
         </div>
     
         <div className="c-work">
-          <h2 class="c-main__head">My Work</h2>
-          <hr class="c-main__head-line" />
+          <h2 className="c-main__head">My Work</h2>
+          <hr className="c-main__head-line" />
           <Slider />
         </div>
       </div>
