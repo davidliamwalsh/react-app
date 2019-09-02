@@ -1,6 +1,11 @@
 import { Component } from 'react'
 
-class Navbar extends Component {
+class HomeNavbar extends Component {
+
+  constructor (props) {
+    super(props)
+    this.burgerClick = this.burgerClick.bind(this)
+  }
 
   burgerClick () {
     const nav = document.querySelector("ul[data-behavior='nav_links']")
@@ -29,7 +34,7 @@ class Navbar extends Component {
         <li data-behavior="nav_list"><a href="http://localhost:3000/About">About</a></li>
         <li data-behavior="nav_list"><a href="http://localhost:3000/Contact">Contact</a></li>
       </ul>
-      <div className="c-nav__burger" onClick={this.burgerClick.bind(this)}>
+      <div className="c-nav__burger" onClick={this.burgerClick}>
         <div className="c-nav__burger-top"></div>
         <div className="c-nav__burger-middle"></div>
         <div className="c-nav__burger-bottom"></div>
@@ -38,4 +43,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default HomeNavbar
