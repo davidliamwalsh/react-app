@@ -1,35 +1,45 @@
 .c-slider {
+  max-width: 800px;
+  margin: 0 auto;
   position: relative;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  background: #ffff;
-
+  
   &__container  {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+    padding-bottom: 56.25%;
+    background: #ffff;
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  &__list.active {
+    opacity: 1;
   }
 
   &__item {
-    position: absolute; top: 0; left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity .3s linear;
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
-  
-    &--image {
-      width: 70%;
-      height: 85%;
+   
+
+    &--link {
+      color: $dark;
+      text-decoration: none;
+      font-size: 25px;
+      text-align: center;
     }
 
-    &--current{
-      opacity: 1;
-      z-index: 2;
+    &--image-laptop {
+      display: block;
+      width: 70%;
     }
+   
   }
 }

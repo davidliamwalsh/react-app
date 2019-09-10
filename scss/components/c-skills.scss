@@ -18,59 +18,7 @@
       }
 
       &--right {
-        float: right;
-        font-size: 12px;
-        margin-top: 2px;
-      }
-
-      &--html {
-        background-color: #E54C26;
-
-        &-active {
-          width: 95%;
-          transition: 2s;
-          background-color: #E54C26;
-        }
-      }
-
-      &--css  {
-        background-color: #264DE4;
-        
-        &-active {
-          width: 80%;
-          transition: 2s;
-          background-color: #264DE4;
-        }
-      }
-
-      &--javascript  {
-        background-color: #E8D64C;
-        
-        &-active {
-          width: 64%;
-          transition: 2s;
-          background-color: #E8D64C;
-        }
-      }
-
-      &--react {
-        background-color: #5ED3F4;
-
-        &-active {
-          width: 25%;
-          transition: 2s;
-          background-color: #5ED3F4;
-        }
-      }
-
-      &--ror {
-        background-color: #E61522;
-       
-        &-active {
-          width: 50%;
-          transition: 2s;
-          background-color: #E61522;
-        }
+        display: none;
       }
 
       &--html,
@@ -78,15 +26,56 @@
       &--javascript,
       &--react,
       &--ror {
-        width: 15%;
+        animation-duration: 4s;
+      }
+
+      &--html {
+        background-color: #E54C26;
+        animation-name: html;
+        width: 95%;
+      }
+
+      &--css  {
+        background-color: #264DE4;
+        animation-name: css;
+        width: 80%;
+      }
+
+      &--javascript  {
+        background-color: #E8D64C;
+        animation-name: js;
+        width: 64%;
+      }
+
+      &--react {
+        background-color: #5ED3F4;
+        animation-name: react;
+        width: 25%;
+      }
+
+      &--ror {
+        background-color: #E61522;
+        animation-name: ror;
+        width: 50%;
       }
     }
   }
 }
 
+
 @media screen and (min-width: $tablet-break) {
 
   .c-skills__container__wrapper div {
-    font-size: 15px; 
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: $laptop-break) {
+
+  .c-skills__container__wrapper--right {
+    display: block;
+    float: right;
+    font-size: 12px;
+    margin-top: 2px;
   }
 }

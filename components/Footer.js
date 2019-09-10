@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Link from 'next/link'
 
 class Footer extends Component {
   render () {
@@ -11,12 +12,12 @@ class Footer extends Component {
       </div>
       <div className="c-footer__column--right">
         <p>
-          <a href="https://github.com/davidliamwalsh">
-            <img src="/static/github.png" className="c-footer__column--right-hero" />
-          </a>
-          <a href="https://www.linkedin.com/in/david-walsh-ab550138/">
-            <img src="/static/linkedin.png" className="c-footer__column--right-hero" />
-          </a>
+          <Link href="#">
+            <a><img src="/static/github.png" className="c-footer__column--right-hero" /></a>
+          </Link>
+          <Link href="#">
+            <a><img src="/static/linkedin.png" className="c-footer__column--right-hero" /></a>
+          </Link>
         </p>
       </div>
     </div>

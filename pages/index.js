@@ -1,34 +1,34 @@
 import { Component } from 'react'
 
 import Header from '../components/Header'
-import Articles from '../components/Articles'
+import Article from '../components/Article'
 import Slider from '../components/Slider'
 import Layout from '../components/Layout'
 
-import '../scss/application.scss'
-
 class Index extends Component {
+  renderArticles () {
+    return [1,2,3].map((index) => {
+      return <Article key={index}/>
+    })
+  }
 
   render () {
-    return <div>
-      { this.props.children }
-      <Header />
+    return <Layout>
       <div className="c-container"> 
         <div className="c-articles">
           <h2 className="c-main__head">My Articles</h2> 
           <hr className="c-main__head-line" /> 
-          <Articles />
+          <div className="c-container-flex"> 
+            {this.renderArticles()}
+          </div>
         </div>
-    
         <div className="c-work">
           <h2 className="c-main__head">My Work</h2>
           <hr className="c-main__head-line" />
           <Slider />
         </div>
       </div>
-
-      <Layout />
-    </div>
+    </Layout>
   }
 }
 

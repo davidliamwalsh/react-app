@@ -1,24 +1,30 @@
-import React from 'react'
+import { Component } from 'react'
+import { withRouter } from 'next/router'
 
-import HomeNavbar from './HomeNavbar'
+import Navbar from './Navbar'
 import SignupForm from './SignupForm'
 
-const Header = () => {
-  return (
-    <header className="c-header">
-      <div className="c-header__image">
-      <HomeNavbar />
-        <div className="c-header__container">
-          <div className="c-header__intro">
-            <h3 className="c-header__name">DAVID<span>/</span>WALSH</h3>
-            <h4 className="c-header__title">Web Developer</h4>
+class Header extends Component {
+  render () {
+    if (this.props.router.pathname === '/') {
+      return (
+        <header className="c-header">
+          <div className="c-header__image">
+            <Navbar />
+            <div className="c-header__container">
+              <div className="c-header__intro">
+                <h3 className="c-header__name">DAVID<span>/</span>WALSH</h3>
+                <h4 className="c-header__title">Web Developer</h4>
+              </div>
+              <SignupForm />
+            </div>
           </div>
-          
-          <SignupForm />
-        </div>
-      </div>
-    </header>
-  )
+        </header>
+      )  
+    } else {
+      return <Navbar />
+    }
+  }
 }
 
-export default Header
+export default withRouter(Header)
