@@ -31,11 +31,6 @@ class Slider extends Component {
 
   render () {
 
-    let sliderStyle = {
-      transform:`translateX(${this.state.activeIndex * -100}%)`,
-      transition: '0.2s'
-    }
-
     return <div className="c-slider">
 
       <ul className='c-slider__container'>
@@ -47,6 +42,8 @@ class Slider extends Component {
             </Link>
           </h4>
           <img src="/static/welford-laptop.png" className="c-slider__item--image-laptop" />
+          <img src="/static/welford-tablet.png" className="c-slider__item--image-tablet" />
+          <img src="/static/welford-mobile.png" className="c-slider__item--image-mobile" />
         </div>,
 
         <div className="c-slider__item"> 
@@ -56,6 +53,8 @@ class Slider extends Component {
             </Link>
           </h4>
           <img src="/static/etcha-laptop.png" className="c-slider__item--image-laptop" />
+          <img src="/static/etcha-tablet.png" className="c-slider__item--image-tablet" />
+          <img src="/static/etcha-mobile.png" className="c-slider__item--image-mobile" />
         </div>,
 
         <div className="c-slider__item">
@@ -65,6 +64,8 @@ class Slider extends Component {
             </Link>
           </h4>
           <img src="/static/blogger-laptop.png" className="c-slider__item--image-laptop" />
+          <img src="/static/blogger-tablet.png" className="c-slider__item--image-tablet" />
+          <img src="/static/blogger-mobile.png" className="c-slider__item--image-mobile" />
         </div>,
 
         <div className="c-slider__item"> 
@@ -74,6 +75,8 @@ class Slider extends Component {
             </Link>
           </h4>
           <img src="/static/rockpaper-laptop.png" className="c-slider__item--image-laptop" />
+          <img src="/static/rockpaper-tablet.png" className="c-slider__item--image-tablet" />
+          <img src="/static/rockpaper-mobile.png" className="c-slider__item--image-mobile" />
         </div>,
         
         <div className="c-slider__item">
@@ -83,25 +86,26 @@ class Slider extends Component {
             </Link>
           </h4>
           <img src="/static/Calculator-laptop.png" className="c-slider__item--image-laptop" />
+          <img src="/static/Calculator-tablet.png" className="c-slider__item--image-tablet" />
+          <img src="/static/Calculator-mobile.png" className="c-slider__item--image-mobile" />
         </div>,
 
         ].map((item, index) => {
           let computedClass = index === (this.state.activeIndex) ? 'c-slider__list active' : 'c-slider__list';
           return <li className={computedClass} key={index}>{item}</li>
         })}
-      </ul>
 
-      <div className="c-controls">
-        <div className="c-controls__btn c-controls__btn--prev" onClick={this.onPrevClick}>
-          <button className="o-control__button o-control__button--lefttop" />
-          <button className="o-control__button o-control__button--leftbottom" />
+<       div className="c-control">
+          <div className="c-control__btn c-control__btn--prev" onClick={this.onPrevClick}>
+            <button className="c-control__btn-default c-control__btn--lefttop" />
+            <button className="c-control__btn-default c-control__btn--leftbottom" />
+          </div>
+          <div className="c-control__btn c-control__btn--next" onClick={this.onNextClick}>
+            <button className="c-control__btn-default c-control__btn--righttop" />
+            <button className="c-control__btn-default c-control__btn--rightbottom" />
+          </div>
         </div>
-        <div className="c-controls__btn c-controls__btn--next" onClick={this.onNextClick}>
-          <button className="o-control__button o-control__button--righttop" />
-          <button className="o-control__button o-control__button--rightbottom" />
-        </div>
-      </div>
-      
+      </ul>
     </div>
   }
 }

@@ -13,7 +13,7 @@ class Contact extends Component {
       
           <div className="c-contact__intro">
             Whether you're interested in working with me or just want to say hello, I'd love to hear from you!
-            <hr />
+            <hr className="c-main__page_divide" />
           </div>
 
           <ContactForm />

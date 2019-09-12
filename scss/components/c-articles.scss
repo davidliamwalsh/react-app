@@ -1,10 +1,9 @@
 .c-articles {
   margin-top: 3em;
   
-
   &__list {
     display: block;
-    background: #F5F5F5;
+    background: $light;
     margin: .5em;
 
     &--hero {
@@ -26,7 +25,7 @@
       }
       &--date {
         padding: 1.5em .5em;
-        color: $header-typewriter;
+        color: $danger;
       }
     }
   }

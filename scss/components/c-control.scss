@@ -1,0 +1,40 @@
+.c-control {
+   
+  &__btn {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+   
+    &-default {
+      display: flex;
+      flex-direction: column;
+      background-color: $dark;
+      width: 20px;
+      height: 4px;
+      margin: 5px;
+      border: none;
+      border-radius: 20px;
+    }
+
+    &--prev {
+      left: 0;
+      padding-left: 5px;
+    }
+    &--next {
+      right: 0;
+      padding-right: 5px;
+    }
+
+    &--lefttop,
+    &--rightbottom {
+      transform: rotate(150deg);
+    }
+    &--leftbottom,
+    &--righttop {
+      transform: rotate(30deg);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

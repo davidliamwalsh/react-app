@@ -33,7 +33,7 @@
     font-weight: bold;
     font-size: 2em;
     span {
-      color: $header-typewriter;
+      color: $danger;
     }
   }
 
@@ -41,7 +41,7 @@
     font-size: 1.2em;
     letter-spacing: 6px;
     line-height: 1em;
-    border-right: .15em solid $header-typewriter;
+    border-right: .15em solid $danger;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2.5s steps(12, end),

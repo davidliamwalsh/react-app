@@ -11,7 +11,9 @@ class CV extends Component {
           Web Developer
         </li>
         <li className="c-about__cv--item-description">
-          Learning the process of building apps through theoretical, practical and commercial experience. HTML, CSS, JavaScript, Ruby on Rails - PostgreSQL, Gems, FactoryBot, RSpec, MVC, RESTful APIs
+        Creating gaming apps powered by JavaScript<br />
+        Ruby App - http basic auth login admin panel; API setup with Mailchimp, Postmark, and Auth0; Capybara test suite; PostgreSQL and GraphQL database<br />
+        Front-end – React, NextJS, NodeJS, Jest and Enzyme 
         </li>
       </ul>
 
@@ -20,10 +22,10 @@ class CV extends Component {
           Audio Images
         </li>
         <li className="c-about__cv--item-title">
-          Junior Front-end Web Developer
+          Junior Front-end Developer
         </li>
         <li className="c-about__cv--item-description">
-          Creating and editing website content through Magento2. HTML5, CSS3, basic JavaScript, Adobe Photoshop CS6, Final Cut Pro. Managing website layout through static blocks, fixed attributes, and detailed categories. Creating aesthetically and pleasing design to target a bigger audience.
+          Creating and editing website content through Magento 1.9. HTML5, CSS3, basic JavaScript, Adobe Photoshop CS6, Final Cut Pro. 
         </li>
       </ul>
 
@@ -35,20 +37,19 @@ class CV extends Component {
           Content Manager
         </li>
         <li className="c-about__cv--item-description">
-          Zoho CRM and Books. Deluge Script, data integration, web hooks, bespoke   workflow rules, wireframe.
-          The same set up was executed for Audio Images also, a sister company of Leodis Financial. Magento > Zoho CRM Integration, Magenest.
+          Zoho CRM and Books: Deluge Script, data integration, web hooks, workflow rules, CRM wire framing. Integrating Magento 1.9 database > Zoho database CRM
         </li>
       </ul>
 
       <ul className="c-about__cv--item">
         <li className="c-about__cv--item-company">
-          LDC Decorating Contractors Ltd
+          LDC Decorating Contractors
         </li>
         <li className="c-about__cv--item-title">
-          Front-end Web Developer
+          Front-end Developer
         </li>
         <li className="c-about__cv--item-description">
-          Creating a new bespoke website editing old and new images in Photoshop for a better user experience. HTML5, CSS3, JavaScript/jQuery, Bootstrap plugins, FTP.
+          Creating a new bespoke website editing old and new images in Photoshop for better UX. HTML5, CSS3, JavaScript/jQuery, Bootstrap plugins, FTP.
         </li>
       </ul>
     </div>
