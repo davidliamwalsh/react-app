@@ -15,6 +15,7 @@ class Navbar extends Component {
   burgerClick () {
     this.setState({ navBarOpen: !this.state.navBarOpen })
   }
+  
   renderTransparantNavBar () {
     return this.props.router.pathname === '/' ? 'c-nav-active' : ''
   }
