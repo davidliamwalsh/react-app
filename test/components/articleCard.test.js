@@ -5,7 +5,7 @@ describe('<ArticleCard />', () => {
     const article = {
       id: '1',
       title: 'This is my article',
-      body: 'This is the **body** of my article, which includes markdown',
+      body: 'This is the body of my article',
       created_at: new Date(Date.UTC(96, 1, 2, 3, 4, 5))
     }
 
