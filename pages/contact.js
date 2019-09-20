@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 class Contact extends Component {
   render () {
     return <Layout>
-      <div className="c-container">
+      <div className="c-contact-container">
         <div className="c-contact">
           <h2 className="c-main__head">Contact Me</h2>
           <hr className="c-main__head-line" />

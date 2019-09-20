@@ -41,7 +41,7 @@ class Slider extends Component {
 
       <div className="c-slider__item"> 
         <h4>
-          <a href="https://davidliamwalsh.github.io/etchasketch/">className="c-slider__item--link">Etcha Sketch</a>
+          <a href="https://davidliamwalsh.github.io/etchasketch/" className="c-slider__item--link">Etcha Sketch</a>
         </h4>
         <img src="/static/etcha-laptop.png" className="c-slider__item--image-laptop" />
         <img src="/static/etcha-tablet.png" className="c-slider__item--image-tablet" />
