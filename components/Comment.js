@@ -1,14 +1,21 @@
 import { Component } from 'react'
+import moment from 'moment'
 
 class Comment extends Component {
 
   render () {
-    return  <div class="c-comments">
-      <div class="c-comments__form">
-      </div>
-      <div class="c-comments__comment">
-        <h3></h3>
-        <hr class="c-main__head-line" />
+
+    const { comment } = this.props
+
+    return  <div className="c-comments">
+      <div className="c-comments__comment">
+        <h3>Comments</h3>
+        <hr className="c-main__head-line" />
+        <div className="c-comments__comment__card">
+          <p className="c-comments__comment__card--name">Comment by {comment.name}</p>
+          <p className="c-comments__comment__card--body">{comment.body}</p>
+          <p className="c-comments__comment__card--date">Posted on <time dateTime={comment.created_at}>{moment(comment.created_at).format('LL')}</time></p>
+        </div>
       </div>
     </div>
   }

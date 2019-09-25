@@ -15,11 +15,11 @@ class Index extends Component {
     this.articlesQuery = gql`
       query articles {
         articles {
-          id
-          image
+          slug
+          previewImage
+          title
           body
           createdAt
-          title
         }
       }
     `
@@ -44,8 +44,12 @@ class Index extends Component {
                   })}
                 </div>
               </div>
+              <div className="c-slider"> 
+                <h2 className="c-main__head">My Work</h2>
+                <hr className="c-main__head-line" />
+                <Slider />
+              </div>
             </div>
-            <Slider />
           </Layout>
         }
       }}

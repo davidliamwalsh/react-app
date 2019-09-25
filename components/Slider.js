@@ -96,14 +96,11 @@ class Slider extends Component {
 
   render () {
 
-    return <div className="c-slider">
-      
+    return <div className="c-slider__outer">
       <ul className='c-slider__container'>
         {this.sliderData()}
       </ul>
-
       {this.controlData()}
-      
     </div>
   }
 }

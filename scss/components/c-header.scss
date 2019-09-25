@@ -74,18 +74,19 @@
   }
 }
 
-
 @media screen and (min-width: $tablet-break) {
   .c-header {
 
     &__name {
       font-weight: bold;
-    font-size: 2em;
+      font-size: 2em;
     }
+
     &__title {
       font-size: 1.2em;
-    letter-spacing: 6px;
+      letter-spacing: 6px;
     }
+
     &__signup__form {
       
       &--field {
@@ -94,10 +95,12 @@
         &-label {
           font-size: 20px;
         }
+
         &-input {
           font-size: 15px;
         }
       }
+      
       &--submit {
         font-size: 14px;
       } 

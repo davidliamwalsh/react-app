@@ -8,6 +8,8 @@
   flex-direction: column;
   justify-content: space-around;
   color: $light;
+  opacity: 1;
+  z-index: 99;
 
   &__column--left,
   &__column--main,

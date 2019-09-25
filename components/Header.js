@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import SignupForm from './SignupForm'
 
 class Header extends Component {
+
   render () {
     if (this.props.router.pathname === '/') {
       return (

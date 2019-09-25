@@ -15,12 +15,12 @@ class ArticleCard extends Component {
     const { article } = this.props
 
     return <li className="c-articles__list">
-      <div className="c-articles__list--hero">{article.image}</div>
+      <img className="c-articles__list--hero" src={`http://localhost:3001${article.previewImage}`} />
       <div className="c-article__list__inner">
         <h4 className="c-articles__list__inner--title">{article.title}</h4>
         <p className="c-articles__list__inner--body">{this.truncate(article.body)}</p>
         <p className="c-articles__list__inner--date"><time dateTime={article.created_at}>{moment(article.created_at).format('LL')}</time><br />
-          <Link href={`/post?id=${article.id}`}>
+          <Link href={`/article?slug=${article.slug}`} as={`/article/${article.slug}`}>
             <a>view more</a>
           </Link>
         </p>

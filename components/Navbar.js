@@ -24,6 +24,18 @@ class Navbar extends Component {
     return this.state.navBarOpen ? 'c-nav--active' : ''
   }
 
+  burgerRotateTop () {
+    return this.state.navBarOpen ? 'c-nav__burger-top' : ''
+  }
+
+  burgerRotateMiddle () {
+    return this.state.navBarOpen ? 'c-nav__burger-middle' : ''
+  }
+
+  burgerRotateBottom () {
+    return this.state.navBarOpen ? 'c-nav__burger-bottom' : ''
+  }
+
   render () {
     return <nav className={`c-nav ${this.renderTransparantNavBar()}`}>
       <div className="c-nav__logo">
@@ -39,21 +51,24 @@ class Navbar extends Component {
             <a>Home</a>
           </Link>
         </li>
+        <hr />
         <li className="c-nav__links-list">
           <Link href='/about'>
             <a>About</a>
           </Link>
         </li>
+        <hr />
         <li className="c-nav__links-list">
           <Link href='/contact'>
             <a>Contact</a>
           </Link>
         </li>
+        <hr />
       </ul>
       <div className="c-nav__burger" onClick={this.burgerClick}>
-        <div className="c-nav__burger-top"></div>
-        <div className="c-nav__burger-middle"></div>
-        <div className="c-nav__burger-bottom"></div>
+        <div className={`${this.burgerRotateTop()}`}></div>
+        <div className={`${this.burgerRotateMiddle()}`}></div>
+        <div className={`${this.burgerRotateBottom()}`}></div>
       </div>
     </nav>
   }

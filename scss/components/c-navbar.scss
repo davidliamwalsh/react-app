@@ -4,6 +4,7 @@
   align-items: center;
   min-height: 4em;
   background: $dark;
+  z-index: 1;
 
   &-active {
     background: transparent;
@@ -18,6 +19,7 @@
     h4 a {
       text-decoration: none;
       color: $light;
+      font-weight: 100;
       
       &:hover {
         color: $danger;
@@ -36,6 +38,8 @@
       letter-spacing: 3px;
       font-weight: bold;
       font-size: 16px;
+      font-weight: 100;
+      animation: navLinkFade 0.5s ease forwards;
       
       &:hover {
         color: $danger;
@@ -50,7 +54,7 @@
   
   &__burger div {
     width: 25px;
-    height: 4px;
+    height: 2px;
     background-color: $light;
     margin: 5px;
     transition: all 0.2s ease-in;
@@ -66,44 +70,63 @@
     }
 
     &__links {
-      position: absolute;
+      position: fixed;
       right: 0;
-      height: 85vh;
-      top: 4em;
+      height: 100vh;
+      top: 0;
       flex-direction: column;
+      justify-content: flex-start;
       background: $dark;
-      align-items: center;
-      width: 50%;
+      align-items: flex-start;
+      width: 30%;
+      min-width: 150px;
       transform: translateX(100%);
       transition: transform 0.2s ease;
       overflow-x: hidden;
+      opacity: 1;
+      z-index: 99;
+
+      &-list {
+        padding: 2em 0;
+      }
+
+      hr {
+        color: white;
+        width: 100%;
+      }
+
+      a {
+        color: $light;
+        padding: 3em;
+      }
     }
 
     &__home-links {
       background: #01061d;
-      opacity: .8;
+      padding-top: 4em;
     }
   
     &__burger {
       display: block !important;
       cursor: pointer;
       padding-right: 2em;
+      z-index: 99;
     }
   
     &--active {
       transform: translateX(0%);
     }
-  
-    .toggle {
-      &__burger-top {
-        transform: rotate(-45deg) translate(-6.5px,6px)
-      }
-      &__burger-middle {
-        opacity: 0;
-      }
-      &__burger-bottom {
-        transform: rotate(45deg) translate(-6.5px,-6px)
-      }
+    
+    &__burger-top {
+      transform: rotate(-45deg) translate(-4px,6px);
+    }
+    &__burger-middle {
+      opacity: 0;
+    }
+    &__burger-bottom {
+      transform: rotate(45deg) translate(-4px,-6px);
     }
   }
 }
+
+
