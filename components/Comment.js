@@ -8,14 +8,10 @@ class Comment extends Component {
     const { comment } = this.props
 
     return  <div className="c-comments">
-      <div className="c-comments__comment">
-        <h3>Comments</h3>
-        <hr className="c-main__head-line" />
-        <div className="c-comments__comment__card">
-          <p className="c-comments__comment__card--name">Comment by {comment.name}</p>
-          <p className="c-comments__comment__card--body">{comment.body}</p>
-          <p className="c-comments__comment__card--date">Posted on <time dateTime={comment.created_at}>{moment(comment.created_at).format('LL')}</time></p>
-        </div>
+      <div className="c-comments__comment__card">
+        <p className="c-comments__comment__card--name">Comment by {comment.name}</p>
+        <p className="c-comments__comment__card--body">{comment.body}</p>
+        <p className="c-comments__comment__card--date">Posted on <time dateTime={comment.created_at}>{moment(comment.created_at).format('LL')}</time></p>
       </div>
     </div>
   }

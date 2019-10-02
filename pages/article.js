@@ -42,9 +42,13 @@ class Article extends Component {
           return <Layout {...this.props}>
             <div className="c-container-article">
               <FullArticle article={data.article} />
-              {data.article.comments.map((comment, index) => {
-                return <Comment comment={comment} key={index} />
-              })}
+              <div className="c-comments__comment">
+                <h3>Comments</h3>
+                <hr className="c-main__head-line" />
+                {data.article.comments.map((comment, index) => {
+                  return <Comment comment={comment} key={index} />
+                })}
+              </div>
             </div>
           </Layout>
         }
