@@ -1,10 +1,11 @@
 .c-slider {
-  max-width: 800px;
   margin: 0 auto;
   position: relative;
   padding-top: 2em;
 
   &__outer {
+    max-width: 1000px;
+    margin: auto;
     position: relative;
   }
   
