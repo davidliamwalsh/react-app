@@ -20,7 +20,7 @@ class ArticleCard extends Component {
         <h4 className="c-articles__list__inner--title">{article.title}</h4>
         <p className="c-articles__list__inner--body">{this.truncate(article.body)}</p>
         <p className="c-articles__list__inner--date"><time dateTime={article.created_at}>{moment(article.created_at).format('LL')}</time><br />
-          <Link href={`/article?slug=${article.slug}`} as={`/article/${article.slug}`}>
+          <Link href={`/article?slug=${article.slug}`} as={`/articles/${article.slug}`}>
             <a>view more</a>
           </Link>
         </p>

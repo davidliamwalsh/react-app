@@ -18,7 +18,7 @@ class FullArticle extends Component {
         {article.body}
       </li>
       <li className="c-article__date">
-        <time dateTime={article.created_at}>{moment(article.created_at).format('LL')}</time>
+        Posted {moment(article.createdAt).fromNow()}
       </li>
     </ul>
   }

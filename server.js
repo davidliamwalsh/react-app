@@ -22,12 +22,20 @@ app.prepare()
     return app.render(req, res, '/contact', req.query)
   })
 
+  server.get('/article', (req, res) => {
+    return app.render(req, res, '/article', req.query)
+  })
+
+  server.get('/callback', (req, res) => {
+    return app.render(req, res, '/callback', req.query)
+  })
+
   server.get('/articles-gallery', (req, res) => {
     return app.render(req, res, '/articles-gallery', req.query)
   })
 
-  server.get('/articles/:id', (req, res) => {
-    return app.render(req, res, '/article', { id: req.params.id })
+  server.get('/articles/:slug', (req, res) => {
+    return app.render(req, res, '/article', { slug: req.params.slug })
   })
 
   server.get('*', (req, res) => {
