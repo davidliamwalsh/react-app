@@ -23,6 +23,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "apollo-cache-inmemory": "^1.6.3",
     "babel-jest": "^24.9.0",
     "babel-plugin-transform-define": "^1.3.1",
     "babel-preset-env": "^1.6.1",

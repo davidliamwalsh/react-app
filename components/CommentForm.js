@@ -7,6 +7,10 @@ class CommentForm extends Component {
   constructor (props) {
     super(props)
 
+    this.state = {
+      profile: {}
+    }
+
     this.auth = new Auth()
     this.login = this.login.bind(this)
     this.logout = this.logout.bind(this)
@@ -21,21 +25,30 @@ class CommentForm extends Component {
     this.auth.login(this.props.router.asPath)
   }
 
+  userProfile () {
+    return {
+      nickname: localStorage.getItem('nickname'),
+      picture: localStorage.getItem('picture')
+    }
+  }
+
   render () {
     if (this.auth.isAuthenticated()) {
+
+      const userProfile = this.userProfile()
+
       return <form onSubmit={this.props.mutation}>
-      <p className="c-comments__form--row">
-        <label>Name</label>
-        <input name='name' className='c-comments__form--name' required />
-      </p>
-      <p className="c-comments__form--row">
-        <label>Body</label>
-        <textarea name='body' className='c-comments__form--body' required />
-      </p>
-      <p className="c-comments__form--row">
+      <div className="c-comments__form--user">
+        <img className="c-comments__form--user-image" src={userProfile.picture} />
+        <span className="c-comments__form--user-nickname">{userProfile.nickname}</span>  
+      </div>
+      <div className="c-comments__form--body">
+        <textarea name='body' className="c-comments__form--body-text" required />
+      </div>
+      <div className="c-comments__form--row">
         <button type='submit' className='o-submit__btn'>Submit</button>
         <a className="o-submit__btn" onClick={this.logout} >Logout</a>
-      </p>
+      </div>
     </form>
     } else {
       return <div className='c-comments__form'>
