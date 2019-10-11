@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import FullArticle from '../components/FullArticle'
 import CommentForm from '../components/CommentForm'
 import Comment from '../components/Comment'
+import { Facebook } from 'react-content-loader'
 
 
 import withData from '../lib/withData'
@@ -36,11 +37,16 @@ class Article extends Component {
   }
 
   render () {
+
+    const MyFacebookLoader = () => <Facebook />
+
     return <Query query={this.articleQuery} variables={{slug: this.props.router.query.slug}}>
       {({ loading, data }) => {
         if (loading) {
           return <Layout {...this.props}>
-            <p>Loading..</p>
+            <div className="c-container__loader">
+              <MyFacebookLoader />
+            </div>
           </Layout>
         } else {
           return <Layout {...this.props}>

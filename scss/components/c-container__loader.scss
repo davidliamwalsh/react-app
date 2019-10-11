@@ -1,0 +1,13 @@
+.c-container__loader {
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 20vh;
+  min-height: 80vh;
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-container__loader {
+    width: 60%;
+  }
+}

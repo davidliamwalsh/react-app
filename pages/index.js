@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
+import { Facebook } from 'react-content-loader'
 
 import ArticleCard from '../components/ArticleCard'
 import Slider from '../components/Slider'
@@ -26,11 +27,15 @@ class Index extends Component {
   }
 
   render () {
+    const MyFacebookLoader = () => <Facebook />
+
     return <Query query={this.articlesQuery}>
       {({ loading, data }) => {
         if (loading) {
           return <Layout {...this.props}>
-            <p>Loading...</p>
+            <div className="c-container__loader">
+              <MyFacebookLoader />
+            </div>
           </Layout>
         } else {
           return <Layout {...this.props}>

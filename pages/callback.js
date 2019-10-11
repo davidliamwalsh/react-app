@@ -1,7 +1,7 @@
 import { Component } from 'react'
-import Router from 'next/router'
 import { withRouter } from 'next/router'
 
+import { Facebook } from 'react-content-loader'
 import Auth from '../lib/Auth'
 
 import Layout from '../components/Layout'
@@ -16,8 +16,12 @@ class Callback extends Component {
   }
 
   render () {
+    const MyFacebookLoader = () => <Facebook />
+
     return  <Layout {...this.props}>
-      <p>Logging you in...</p>
+      <div className="c-container__loader">
+        <MyFacebookLoader />
+      </div>
     </Layout>
   }
 }
