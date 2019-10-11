@@ -31,7 +31,7 @@ class Articles extends Component {
         if (loading) {
           return <Layout {...this.props}>
             <div className="c-loader__container">
-              <p className="c-loader__message">Article loading...</p>
+              <p className="c-loader__message">Articles loading...</p>
               <MyFacebookLoader />
             </div>
           </Layout>
