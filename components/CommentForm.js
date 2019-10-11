@@ -38,18 +38,18 @@ class CommentForm extends Component {
       const userProfile = this.userProfile()
 
       return <form onSubmit={this.props.mutation}>
-      <div className="c-comments__form--user">
-        <img className="c-comments__form--user-image" src={userProfile.picture} />
-        <span className="c-comments__form--user-nickname">{userProfile.nickname}</span>  
-      </div>
-      <div className="c-comments__form--body">
-        <textarea name='body' className="c-comments__form--body-text" required />
-      </div>
-      <div className="c-comments__form--row">
-        <button type='submit' className='o-submit__btn'>Submit</button>
-        <a className="o-submit__btn" onClick={this.logout} >Logout</a>
-      </div>
-    </form>
+        <div className="c-comments__form--user">
+          <img className="c-comments__form--user-image" src={userProfile.picture} />
+          <span className="c-comments__form--user-nickname">{userProfile.nickname}</span>  
+        </div>
+        <div className="c-comments__form--body">
+          <textarea name='body' className="c-comments__form--body-text" required />
+        </div>
+        <div className="c-comments__form--row">
+          <button type='submit' className='o-submit__btn'>Submit</button>
+          <a className="o-submit__btn" onClick={this.logout} >Logout</a>
+        </div>
+      </form>
     } else {
       return <div className='c-comments__form'>
         <a className='o-submit__btn' onClick={this.login} >Login</a>
