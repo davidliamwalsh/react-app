@@ -44,7 +44,8 @@ class Article extends Component {
       {({ loading, data }) => {
         if (loading) {
           return <Layout {...this.props}>
-            <div className="c-container__loader">
+            <div className="c-loader__container">
+              <p className="c-loader__message">Article loading...</p>
               <MyFacebookLoader />
             </div>
           </Layout>

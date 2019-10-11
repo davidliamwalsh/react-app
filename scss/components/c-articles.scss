@@ -1,5 +1,10 @@
 .c-articles {
   padding-top: 2em;
+
+  &__gallery {
+    padding-top: 2em;
+    min-height: 80vh;
+  }
   
   &__list {
     display: block;

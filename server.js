@@ -30,8 +30,8 @@ app.prepare()
     return app.render(req, res, '/callback', req.query)
   })
 
-  server.get('/articles-gallery', (req, res) => {
-    return app.render(req, res, '/articles-gallery', req.query)
+  server.get('/articles', (req, res) => {
+    return app.render(req, res, '/articles', req.query)
   })
 
   server.get('/articles/:slug', (req, res) => {

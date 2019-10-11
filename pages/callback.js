@@ -19,7 +19,8 @@ class Callback extends Component {
     const MyFacebookLoader = () => <Facebook />
 
     return  <Layout {...this.props}>
-      <div className="c-container__loader">
+      <div className="c-loader__container">
+        <p className="c-loader__message">Logging you in...</p>
         <MyFacebookLoader />
       </div>
     </Layout>

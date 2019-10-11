@@ -1,52 +1,5 @@
 .c-comments {
-  min-height: calc(50vh - 10px);
-
-  &__form {
-    padding: .5em 0em;
-    margin: 0 0 .5em 0;
-
-    &--user {
-      padding: .5em 0em;
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      &-image {
-        width: 30px;
-        border-radius: 50%;
-        vertical-align: middle;
-      }
-      &-nickname {
-        padding: 0 .5em;
-        vertical-align: middle;
-      }
-      
-    }
-
-    &--body {
-      &-text {
-      width: 100%;
-      max-width: 400px;
-      height: 150px;
-      margin: 8px 0;  
-      padding: 12px 20px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #f8f8f8;
-      font-size: 16px;
-      resize: none;
-      }
-    }
-
-    &--row {
-      padding: .5em 0em;
-
-      a {
-        margin: 2em;
-      }
-    }
-  }
-
+  
   &__comment {
     padding: 2em 0 0 0;
 

@@ -3,13 +3,11 @@ import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import { Facebook } from 'react-content-loader'
 
-import ArticleCard from '../components/ArticleCard'
-import Slider from '../components/Slider'
 import Layout from '../components/Layout'
+import ArticleCard from '../components/ArticleCard'
 import withData from '../lib/withData'
 
-class Index extends Component {
-
+class Articles extends Component {
   constructor (props) {
     super(props)
 
@@ -28,7 +26,6 @@ class Index extends Component {
 
   render () {
     const MyFacebookLoader = () => <Facebook />
-
     return <Query query={this.articlesQuery}>
       {({ loading, data }) => {
         if (loading) {
@@ -40,19 +37,14 @@ class Index extends Component {
         } else {
           return <Layout {...this.props}>
             <div className='c-container'>
-              <div className="c-articles">
-                <h2 className="c-main__head">My Articles</h2> 
-                <hr className="c-main__head-line" /> 
-                <div className="c-container-flex">
+              <div className="c-articles__gallery">
+                <h2 className="c-main__head">My Articles</h2> 
+                <hr className="c-main__head-line" /> 
+                <div className="c-container-flex">
                   {data.articles.map((article, index) => {
                     return <ArticleCard key={index} article={article} />
                   })}
                 </div>
-              </div>
-              <div className="c-slider"> 
-                <h2 className="c-main__head">My Work</h2>
-                <hr className="c-main__head-line" />
-                <Slider />
               </div>
             </div>
           </Layout>
@@ -60,7 +52,10 @@ class Index extends Component {
       }}
     </Query>
   }
-
 }
+    
 
-export default withData(Index)
+ 
+
+
+export default withData(Articles)
