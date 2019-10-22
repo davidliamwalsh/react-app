@@ -9,7 +9,6 @@ import ArticleComment from '../components/ArticleComment'
 import Comment from '../components/Comment'
 import { Facebook } from 'react-content-loader'
 
-
 import withData from '../lib/withData'
 
 
@@ -49,7 +48,6 @@ class Article extends Component {
     `
   }
  
-
   articleComment (event, addComment) {
     event.preventDefault()
     const form = event.target
@@ -82,7 +80,10 @@ class Article extends Component {
           return <Layout {...this.props}>
             <div className="c-container-article">
               <FullArticle article={data.article} />
-              <Mutation mutation={this.addComment}>
+
+              <Mutation mutation={this.addComment}
+              
+              >
                 {addComment => {
                   return <div>
                     <ArticleComment mutation={(event) => this.articleComment(event, addComment)} />
@@ -92,6 +93,7 @@ class Article extends Component {
                       {data.article.comments.map((comment, index) => {
                         return <Comment comment={comment} key={index} />
                       })}
+                      
                     </div>  
                   </div>
                 }}

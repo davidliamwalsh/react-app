@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { withRouter } from 'next/router'
 
 class CommentForm extends Component {
 
@@ -17,4 +18,4 @@ class CommentForm extends Component {
   }
 }
 
-export default CommentForm
+export default withRouter(CommentForm)
