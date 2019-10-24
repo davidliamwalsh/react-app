@@ -80,23 +80,30 @@ class Article extends Component {
           return <Layout {...this.props}>
             <div className="c-container-article">
               <FullArticle article={data.article} />
-
               <Mutation mutation={this.addComment}
-              
-              >
-                {addComment => {
+                update={(cache, { data: { addComment } }) => {
+                  data.article.comments.unshift(addComment)
+                  const updatedArticle = Object.assign({}, data.article, { comments: data.article.comments })
+                  cache.writeQuery({
+                    query: this.articleQuery,
+                    variables: { slug: this.props.url.query.slug },
+                    data: { article: updatedArticle }
+                  })
+                }
+              }>
+                { addComment => {
                   return <div>
                     <ArticleComment mutation={(event) => this.articleComment(event, addComment)} />
                     <div className="c-comments__comment">
                       <h3>Comments</h3>
-                      <hr className="c-main__head-line" />
+                      <hr className="c-comments__comment-hr" />
                       {data.article.comments.map((comment, index) => {
                         return <Comment comment={comment} key={index} />
                       })}
                       
                     </div>  
                   </div>
-                }}
+                } }
               </Mutation>
             </div>
           </Layout>

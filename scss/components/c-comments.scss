@@ -1,8 +1,16 @@
 .c-comments {
   
   &__comment {
-    padding: 2em 0 0 0;
+    padding: 2.5em 0 0 0;
 
+    &-hr {
+      width: 4em;
+      display: block;
+      height: 2px;
+      border: 0;
+      border-top: 4px solid $danger;
+      margin: .5em 0 1em 0;
+    }
     &__card {
       padding: .5em 0em;
       &--name {

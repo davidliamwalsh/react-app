@@ -59,6 +59,12 @@ class Navbar extends Component {
         </li>
         <hr />
         <li className="c-nav__links-list">
+          <Link href='/articles'>
+            <a>Gallery</a>
+          </Link>
+        </li>
+        <hr />
+        <li className="c-nav__links-list">
           <Link href='/contact'>
             <a>Contact</a>
           </Link>

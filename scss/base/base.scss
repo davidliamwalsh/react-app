@@ -6,3 +6,7 @@
   list-style: none;
   word-spacing: .2rem;
 }
+
+textarea:focus, input:focus{
+  outline: none;
+}

@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { withRouter } from 'next/router'
 
 import Auth from '../lib/Auth'
-import CommentForm from './commentForm'
+import CommentForm from './CommentForm'
 
 class ArticleComment extends Component {
   constructor (props) {
@@ -37,7 +37,7 @@ class ArticleComment extends Component {
     if (this.auth.isAuthenticated()) {
       const userProfile = this.userProfile()
       return <div>
-        <CommentForm articleComment={this.props.mutation} />
+        <CommentForm articleComment={this.props.mutation} userName={userProfile.name} userPicture={userProfile.picture} />
         <a className="o-submit__btn" onClick={this.logout} >Logout</a>
       </div>
     } else {

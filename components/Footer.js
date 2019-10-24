@@ -8,7 +8,7 @@ class Footer extends Component {
         <p>Copyright by David Walsh 2019</p>
       </div>
       <div className="c-footer__column--main">
-        <p>Ruby on Rails Blogging App</p>
+        <p>Ruby and React Blogging App</p>
       </div>
       <div className="c-footer__column--right">
         <p>
