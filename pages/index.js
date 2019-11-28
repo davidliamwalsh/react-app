@@ -40,7 +40,7 @@ class Index extends Component {
         } else {
           return <Layout {...this.props}>
             <div className='c-container'>
-              <div className="c-articles">
+             <div className="c-articles">
                 <h2 className="c-main__head">My Articles</h2> 
                 <hr className="c-main__head-line" /> 
                 <div className="c-container-flex">
