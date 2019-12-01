@@ -1,0 +1,68 @@
+.c-about {
+  margin-top: 3em;
+
+  &__hero {
+  
+    &--image {
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      margin-bottom: 2em;
+    }
+  }
+
+  &__intro {
+    margin: auto;
+    width: 90%;
+    margin-top: 3em;
+    text-align: justify;
+    font-size: 18px;
+
+    a {
+      color: inherit;
+      padding: 0 .5em;
+    }
+  }
+
+  &__cv {
+    margin: auto;
+    width: 90%;
+
+    &--item {
+      margin-top: 1em;
+
+      &-company {
+        font-weight: bold;
+        font-size: 18px; 
+      }
+
+      &-title {
+        font-weight: bold;
+        margin-top: .1em;
+        font-size: 17px;
+        color: $danger;
+      }
+
+      &-description {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $home-hero-break) {
+
+  .c-about {
+  
+    &__hero {
+    
+      &--image {
+        width: 280px;
+        height: 280px;
+      }
+    }
+  }
+}

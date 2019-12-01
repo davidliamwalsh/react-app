@@ -1,0 +1,55 @@
+.c-articles {
+  padding-top: 2em;
+
+  &__gallery {
+    padding-top: 2em;
+    min-height: 80vh;
+  }
+  
+  &__list {
+    display: block;
+    background: $light;
+    margin: .5em;
+
+    &--hero {
+      width: 100%;
+    }
+    &__inner {
+
+      &--title {
+        text-transform: uppercase;
+        padding: .5em;
+      }
+      &--body {
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        height: 4em;
+        padding: .5em;
+      }
+      &--date {
+        padding: 1.5em .5em;
+        color: $danger;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-articles {
+
+    &__list {
+      width: 35vw;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop-break) {
+  .c-articles {
+    &__list {
+      width: 26vw;
+    }
+  }
+}

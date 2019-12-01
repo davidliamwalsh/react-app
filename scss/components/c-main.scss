@@ -1,0 +1,28 @@
+.c-main__head {
+  font-size: 26px;
+
+  &-line {
+    width: 4em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 4px solid $danger;
+    margin: .5em 0 2em 0;
+  }
+}
+
+.c-main__page_divide {
+  margin: auto;
+  margin-top: 1em;
+  width: 70%;
+  height: 2px;
+  display: block;
+  border-top: 4px solid $danger;
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-main__head {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,41 @@
+.c-footer {
+  position: relative;
+  background: $dark;
+  height: 10em;
+  margin-top: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: $light;
+  opacity: 1;
+  z-index: 99;
+
+  &__column--left,
+  &__column--main,
+  &__column--right {
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+
+   &-hero {
+      height: 40px;
+      width: 40px;
+      margin: 0 .5em;
+    }
+  } 
+}
+ 
+@media screen and (min-width: $laptop-break) {
+  .c-footer {
+    height: 5em;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__column--left,
+    &__column--main,
+    &__column--right {
+      width: 30%;
+    }
+  }
+}

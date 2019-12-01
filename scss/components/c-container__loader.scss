@@ -1,0 +1,25 @@
+.c-loader {
+
+  &__container {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 20vh;
+    min-height: 85vh;
+  }
+  
+  &__message {
+    color: $loader-message;
+    padding: 2em 0;
+  }
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-loader {
+
+    &__container {
+      width: 60%;
+    }
+  }
+  
+}

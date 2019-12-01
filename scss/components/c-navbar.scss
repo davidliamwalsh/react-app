@@ -1,0 +1,132 @@
+.c-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 4em;
+  background: $dark;
+  z-index: 1;
+
+  &-active {
+    background: transparent;
+  }
+
+  &__logo {
+    color: $light !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    
+    h4 a {
+      text-decoration: none;
+      color: $light;
+      font-weight: 100;
+      
+      &:hover {
+        color: $danger;
+      }
+    }
+  } 
+     
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+    a {
+      color: $light;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 16px;
+      font-weight: 100;
+      animation: navLinkFade 0.5s ease forwards;
+      
+      &:hover {
+        color: $danger;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+  
+  &__burger div {
+    width: 25px;
+    height: 2px;
+    background-color: $light;
+    margin: 5px;
+    transition: all 0.2s ease-in;
+  }
+}
+
+@media screen and (max-width: $navbar-burger-break) {
+  .c-nav {
+    justify-content: space-between;
+
+    &__logo h4 {
+      padding-left: 2em;
+    }
+
+    &__links {
+      position: fixed;
+      right: 0;
+      height: 100vh;
+      top: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: $dark;
+      align-items: flex-start;
+      width: 30%;
+      min-width: 150px;
+      transform: translateX(100%);
+      transition: transform 0.2s ease;
+      overflow-x: hidden;
+      opacity: 1;
+      z-index: 99;
+
+      &-list {
+        padding: 2em 0;
+      }
+
+      hr {
+        color: white;
+        width: 100%;
+      }
+
+      a {
+        color: $light;
+        padding: 3em;
+      }
+    }
+
+    &__home-links {
+      background: #01061d;
+      padding-top: 4em;
+    }
+  
+    &__burger {
+      display: block !important;
+      cursor: pointer;
+      padding-right: 2em;
+      z-index: 99;
+    }
+  
+    &--active {
+      transform: translateX(0%);
+    }
+    
+    &__burger-top {
+      transform: rotate(-45deg) translate(-4px,6px);
+    }
+    &__burger-middle {
+      opacity: 0;
+    }
+    &__burger-bottom {
+      transform: rotate(45deg) translate(-4px,-6px);
+    }
+  }
+}
+
+

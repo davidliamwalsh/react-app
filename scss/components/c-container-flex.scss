@@ -1,0 +1,14 @@
+.c-container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: $tablet-break) {
+
+  .c-container-flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+}
