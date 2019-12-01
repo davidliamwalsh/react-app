@@ -11,9 +11,9 @@ class CV extends Component {
           Web Developer
         </li>
         <li className="c-about__cv--item-description">
-        Creating gaming apps powered by JavaScript<br />
-        Ruby App - http basic auth login admin panel; API setup with Mailchimp, Postmark, GraphQL and Auth0; Capybara test suite; PostgreSQL<br />
-        Front-end – React, NextJS, NodeJS, JSON, Jest and Enzyme 
+        This was an apprentice program giving me the opportunity to grow as a developer. Working on a stack of React and Ruby I was required to build my own project app, after which I was given the opportunity to gain commercial experience working in an Agile environment.<br />
+        RoR, PostgreSQL, GraphQL, Mailchimp, Postmark, API, HTTP, Auth0, Capybara.<br />
+        React, Apollo, NextJS, NodeJS, JSON, Jest, Enzyme, HTML, Sass.  
         </li>
       </ul>
 
@@ -38,7 +38,28 @@ class CV extends Component {
           Front-end Developer
         </li>
         <li className="c-about__cv--item-description">
-          Creating a new bespoke website editing old and new images in Photoshop for better UX. HTML5, CSS3, JavaScript/jQuery, Bootstrap plugins, FTP.
+          Creating a new bespoke website editing old and new images in Photoshop for better UX. HTML5, CSS3, JavaScript/jQuery, Bootstrap, FTP.
+        </li>
+      </ul>
+
+      <ul className="c-about__cv--item">
+        <li className="c-about__cv--item-company">
+          Education
+        </li>
+        <li className="c-about__cv--item-title">
+          Leeds Trinity University
+        </li>
+        <li className="c-about__cv--item-description">
+          Media Single Hons – Digital Communication and Media/Multimedia: 2:1
+        </li>
+        <li className="c-about__cv--item-title">
+          Udemy
+        </li>
+        <li className="c-about__cv--item-description">
+          The Complete JavaScript Course: Build a Real-World Project 
+        </li>
+        <li className="c-about__cv--item-description">
+          The Complete Web Developer Course 2.0
         </li>
       </ul>
     </div>
