@@ -15,7 +15,7 @@ class ArticleCard extends Component {
     const { article } = this.props
 
     return <li className="c-articles__list">
-      <img className="c-articles__list--hero" src={`${process.env.RUBY_HOST}${article.previewImage}`} />
+      <img className="c-articles__list--hero" src={`${process.env.BACKEND_URL}${article.previewImage}`} />
       <div className="c-article__list__inner">
         <h4 className="c-articles__list__inner--title">{article.title}</h4>
         <p className="c-articles__list__inner--body">{this.truncate(article.body)}</p>
