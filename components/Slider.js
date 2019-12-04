@@ -70,9 +70,9 @@ class Slider extends Component {
         <h4>
           <a href="https://davidliamwalsh.github.io/calculator/" className="c-slider__item--link">Calculator</a>
         </h4>
-        <img src="/static/Calculator-laptop.png" className="c-slider__item--image-laptop" />
-        <img src="/static/Calculator-tablet.png" className="c-slider__item--image-tablet" />
-        <img src="/static/Calculator-mobile.png" className="c-slider__item--image-mobile" />
+        <img src="/static/calculator-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/calculator-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/calculator-mobile.png" className="c-slider__item--image-mobile" />
       </div>,
 
     ].map((item, index) => {
