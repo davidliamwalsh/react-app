@@ -12,7 +12,7 @@ class FullArticle extends Component {
       </li>
       <hr className="c-main__head-line" />
       <li className="c-article__image">
-        <img src={`${process.env.BACKEND_URL}${article.image}`} />
+        <img src={`${BACKEND_URL}${article.image}`} />
       </li>
       <li className="c-article__body">
         {article.body}
