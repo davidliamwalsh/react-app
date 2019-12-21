@@ -41,7 +41,7 @@ class Navbar extends Component {
       <div className="c-nav__logo">
         <h4>
           <Link href="/">
-            <a>Blogger</a>
+            <a>B<span className="c-nav__logo-text">logger</span></a>
           </Link>
         </h4>
       </div>
