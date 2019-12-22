@@ -4160,6 +4160,11 @@ fs-minipass@^1.2.5:
   dependencies:
     minipass "^2.2.1"
 
+fs-scrollanimate@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fs-scrollanimate/-/fs-scrollanimate-1.0.2.tgz#859cb7a0b435bf4a1eb555ce15bbbc4b9cd71f23"
+  integrity sha512-XDwpg/G/AVouNWA9aW97JUr7Jhjd4lTzbL3NSGLMBtYn4wJ5LWiJlKjp0RC1wtpMPFb29WviRhOEeuX1mQ8x6Q==
+
 fs-write-stream-atomic@^1.0.8:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/fs-write-stream-atomic/-/fs-write-stream-atomic-1.0.10.tgz#b47df53493ef911df75731e70a9ded0189db40c9"
