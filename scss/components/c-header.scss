@@ -4,7 +4,7 @@
     height: 100vh;
     text-align: center;
     width: 100%;
-    min-height: 350px;
+    min-height: 450px;
     background: url("/static/header-image.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -70,6 +70,29 @@
           resize: vertical;
         }
       }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+    div {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-bottom: 3px solid $danger;
+      border-right: 3px solid $danger;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+    }
+
+    div:nth-child(2){
+      animation-delay: -0.2s;
     }
   }
 }

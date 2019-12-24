@@ -5,6 +5,15 @@ import Navbar from './Navbar'
 import SignupForm from './SignupForm'
 
 class Header extends Component {
+  constructor (props) {
+    super(props)
+
+    this.scrollClick = this.scrollClick.bind(this)
+  }
+
+  scrollClick () {
+    window.scrollTo({top: 600, behavior: 'smooth'})
+  }
 
   render () {
     if (this.props.router.pathname === '/') {
@@ -18,6 +27,10 @@ class Header extends Component {
                 <h4 className="c-header__title">Web Developer</h4>
               </div>
               <SignupForm />
+              <div className="c-header__arrow" onClick={this.scrollClick}>
+                <div />
+                <div />
+              </div>
             </div>
           </div>
         </header>
