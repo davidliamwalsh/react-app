@@ -11,8 +11,19 @@
     background: $light;
     margin: .5em;
 
+    &--link {
+      text-decoration: none;
+      color: $dark;
+    }
+
     &--hero {
       width: 100%;
+      filter: sepia(100%);
+      transition: .3s ease-in-out;
+
+      &-active {
+        filter: sepia(0);
+      }
     }
     &__inner {
 
@@ -22,15 +33,43 @@
       }
       &--body {
         display: block;
+        text-align: justify;
         text-overflow: ellipsis;
         word-wrap: break-word;
         overflow: hidden;
         height: 4em;
         padding: .5em;
       }
-      &--date {
-        padding: 1.5em .5em;
-        color: $danger;
+
+      &--footer {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: space-between;
+        padding: 0 .5em;
+
+        &-date {
+          font-size: 14px;
+          color: $danger;
+        }
+
+        &-gears {
+          display: block;
+          &_big {
+            width: 20px;
+            &-active {
+              transform-origin: center;
+              animation: rotate 1.5s linear infinite; 
+            }
+          }
+          &_small {
+            width: 15px;
+            &-active {
+              transform-origin: center;
+              animation: reverseRotate 1.5s linear infinite;
+            }
+          }
+        }
       }
     }
   }
@@ -39,7 +78,6 @@
 @media screen and (min-width: $tablet-break) {
 
   .c-articles {
-
     &__list {
       width: 35vw;
     }

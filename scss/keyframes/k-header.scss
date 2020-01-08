@@ -18,17 +18,47 @@
     }
   }
   
+  @keyframes signupLabel {
+    from {
+      left: -800px;
+      opacity: 0.0;
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+  @keyframes signupInput {
+    from {
+      right: -800px;
+      opacity: 0.0;
+    }
+    to {
+      right: 0px;
+    }
+  }
+
+  @keyframes signupSubmit {
+    from {
+      bottom: -800px;
+      opacity: 0.0;
+    }
+    to {
+      bottom: 0px;
+    }
+  }
+
   @keyframes animate {
     0%{
       opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
+      transform: rotate(45deg) translate(-10px,-10px);
     }
     50%{
       opacity: 1;
     }
     100%{
       opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
+      transform: rotate(45deg) translate(10px,10px);
     }
   }
    
