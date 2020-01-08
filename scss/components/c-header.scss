@@ -1,5 +1,5 @@
 .c-header {
-
+  
   &__image {
     height: 100vh;
     text-align: center;
@@ -14,10 +14,10 @@
 
   &__container {
     display: flex;
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
     flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
   }
 
   &__intro {
@@ -54,20 +54,34 @@
     color: $light;
 
     &__form {
-
+      width: 100%;
       &--field {
         margin: 0 auto;
         width: 250px;
 
+        &-label {
+          position: relative;
+          animation: signupLabel 2s;
+          animation-timing-function: ease;
+        }
+
         &-input {
+          position: relative;
           display: block;
           width: 100%;
           padding: 12px;
           border: 1px solid #ccc;
           border-radius: 4px;
-          margin-top: 6px;
-          margin-bottom: 16px;
-          resize: vertical;
+          margin: 1em 0 0 0;
+          resize: vertical; 
+          animation: signupInput 2.5s;
+          animation-timing-function: ease;
+        }
+
+        &-submit {
+          position: relative;
+          animation: signupSubmit 3s;
+          animation-timing-function: ease;
         }
       }
     }
@@ -84,8 +98,8 @@
       display: block;
       width: 20px;
       height: 20px;
-      border-bottom: 3px solid $danger;
-      border-right: 3px solid $danger;
+      border-bottom: 3px solid $light;
+      border-right: 3px solid $light;  
       transform: rotate(45deg);
       margin: -10px;
       animation: animate 2s infinite;
@@ -99,10 +113,9 @@
 
 @media screen and (min-width: $tablet-break) {
   .c-header {
-
+    
     &__name {
       font-weight: bold;
-      font-size: 2em;
     }
 
     &__title {
