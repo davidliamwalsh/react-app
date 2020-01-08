@@ -19,19 +19,33 @@
     &--prev {
       left: 0;
       padding-left: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
     &--next {
       right: 0;
       padding-right: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     &--lefttop,
     &--rightbottom {
       transform: rotate(150deg);
+      &:hover {
+        cursor: pointer;
+      }
     }
     &--leftbottom,
     &--righttop {
       transform: rotate(30deg);
+      &:hover {
+        cursor: pointer;
+      }
     }
     &:hover {
       cursor: pointer;

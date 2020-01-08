@@ -10,7 +10,7 @@ class SignupForm extends Component {
           </label>
           <input type="email" name="EMAIL" className="email c-header__signup__form--field-input" id="mce-EMAIL" placeholder="Your email...." required />
         </div>
-        <input type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="o-submit__btn" />
+        <input type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="o-submit__btn c-header__signup__form--field-submit" />
       </form>
     </div>
   }
