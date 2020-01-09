@@ -1,5 +1,35 @@
 .c-articles {
 
+  @keyframes articleCardFirst {
+    from {
+      left: -800px;
+      opacity: 0.0;
+    }
+    to {
+      right: 0px;
+    }
+  }
+
+  @keyframes articleCardSecond {
+    from {
+      left: -800px;
+      opacity: 0.0;
+    }
+    to {
+      right: 0px;
+    }
+  }
+
+  @keyframes articleCardThird {
+    from {
+      left: -800px;
+      opacity: 0.0;
+    }
+    to {
+      right: 0px;
+    }
+  }
+
   @keyframes rotate {
     0% {
       transform: rotate(0);
