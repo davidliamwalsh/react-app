@@ -1,5 +1,8 @@
 import { Component } from 'react'
 import Link from 'next/link'
+
+import { MarkdownPreview } from 'react-marked-markdown'
+
 import moment from 'moment'
 
 class ArticleCard extends Component {
@@ -49,7 +52,7 @@ class ArticleCard extends Component {
         <img className={`c-articles__list--hero ${this.heroTransition()}`} src={`${process.env.BACKEND_URL}${article.previewImage}`} />
         <div className="c-article__list__inner">
           <h4 className="c-articles__list__inner--title">{article.title}</h4>
-          <p className="c-articles__list__inner--body">{this.truncate(article.body)}</p>
+          <div className="c-articles__list__inner--body"><MarkdownPreview value={this.truncate(article.body)} /></div>
           <div className="c-articles__list__inner--footer">
             <p className="c-articles__list__inner--footer-date">{moment(article.createdAt).format('MMMM Do YYYY')}</p>
             <div className="c-articles__list__inner--footer-gears">
