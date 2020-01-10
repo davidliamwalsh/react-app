@@ -3,6 +3,7 @@
 
   &__title {
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   &__inner {
@@ -16,6 +17,20 @@
     }
     &--body {
       text-align: justify;
+
+      p {
+        padding-bottom: .8em;
+      }
+      pre {
+        margin-bottom: .8em;
+        
+        code {
+          background: black;
+          color: white;
+          display: block;
+          overflow-x: auto;
+        }
+      }
     }
   }
   &__date {

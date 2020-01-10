@@ -11,9 +11,9 @@ class CV extends Component {
           Web Developer
         </li>
         <li className="c-about__cv--item-description">
-        This was an apprentice program giving me the opportunity to grow as a developer. Working on a stack of React and Ruby I was required to build my own project app, after which I was given the opportunity to gain commercial experience working in an Agile environment.<br />
-        RoR, PostgreSQL, GraphQL, Mailchimp, Postmark, API, HTTP, Auth0, Capybara.<br />
-        React, Apollo, NextJS, NodeJS, JSON, Jest, Enzyme, HTML, Sass.  
+          This was an apprentice program giving me the opportunity to grow as a developer. Working on a stack of React and Ruby I was required to build my own project app, after which I was given the opportunity to gain commercial experience working in an Agile environment.<br />
+          RoR, PostgreSQL, GraphQL, Mailchimp, Postmark, API, HTTP, Auth0, Capybara.<br />
+          React, Apollo, NextJS, NodeJS, JSON, Jest, Enzyme, HTML, Sass.  
         </li>
       </ul>
 
@@ -25,8 +25,8 @@ class CV extends Component {
           Junior Front-end Developer
         </li>
         <li className="c-about__cv--item-description">
-        Creating and editing website content through Magento 1.9. HTML5, CSS3, basic JavaScript, Adobe Photoshop CS6, Final Cut Pro.<br />
-        Zoho CRM and Books: Deluge Script, data integration, web hooks, workflow rules, CRM wire framing. Integrating Magento 1.9 database > Zoho database CRM.
+          Creating and editing website content through Magento 1.9. HTML5, CSS3, basic JavaScript, Adobe Photoshop CS6, Final Cut Pro.<br />
+          Zoho CRM and Books: Deluge Script, data integration, web hooks, workflow rules, CRM wire framing. Integrating Magento 1.9 database > Zoho database CRM.
         </li>
       </ul>
 
