@@ -1,17 +1,78 @@
 import { Component } from 'react'
+import fetch from 'isomorphic-unfetch'
+import FlashMessage from 'react-flash-message'
 
 class ContactForm extends Component {
+  constructor (props) {
+    super(props)
+    this.contactForm = this.contactForm.bind(this)
+
+    this.state = {
+      formSubmitted: false,
+      formFailed: false
+    }
+  }
+
+  async contactForm (event) {
+    this.setState({
+      formSubmitted: false,
+      formFailed: false
+    })
+
+    event.preventDefault()
+    const form = event.target
+    const formData = {
+      From: 'coding@davidwalsh.co.uk',
+      To: 'coding@davidwalsh.co.uk',
+      ReplyTo: form.email.value,
+      HtmlBody: form.body.value,
+      Name: form.name.value
+    }
+
+    const response = await fetch('/contact-me',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
+
+    if (response.status === 200) {
+      this.setState({ formSubmitted: true })
+      form.reset()
+    } else {
+      this.setState({ formFailed: true })
+    }
+  }
+
   render () {
     return <div className="c-contact__form--container">
-      <div className="f-contact-form">
-        <label htmlFor="message_name">Name</label>
-        <input className="f-contact-form__input" placeholder="Your Name" type="text" name="message[name]" id="message_name" />
-        <label htmlFor="message_email">Email</label>
-        <input className="f-contact-form__input" placeholder="Your e-mail address" type="text" name="message[email]" id="message_email" />
-        <label htmlFor="message_body">Body</label>
-        <textarea rows="10" className="f-contact-form__input" placeholder="Please type your message" name="message[body]" id="message_body"></textarea>
-      </div>
-      <input type="submit" name="commit" value="Send" className="o-submit__btn" data-disable-with="Send" />
+      { this.state.formSubmitted
+        ? <FlashMessage duration={3000}>
+          {<div className='c-contact-page__submitted'>Thanks for your message, I'll get back to you soon</div> }
+        </FlashMessage> : ''}
+      { this.state.formFailed
+        ? <FlashMessage duration={3000}>
+          {<div className='c-contact-page__failed'>Whoops... something went wrong, please try again</div> }
+        </FlashMessage> : '' }
+      <form onSubmit={this.contactForm}>
+
+        <div className="f-contact-form">
+
+          <label htmlFor="message_name">Name</label>
+          <input className="f-contact-form__input" placeholder="Your Name" type="text" name="name" id="message_name" />
+
+          <label htmlFor="message_email">Email</label>
+          <input className="f-contact-form__input" placeholder="Your e-mail address" type="text" name="email" id="message_email" />
+
+          <label htmlFor="message_body">Body</label>
+          <textarea rows="10" className="f-contact-form__input" placeholder="Please type your message" name="body" id="message_body"></textarea>
+
+        </div>
+
+        <input type="submit" className="o-submit__btn" />
+
+      </form>
+      
     </div>
   }
 }
