@@ -1,5 +1,4 @@
 import { Component } from 'react'
-
 import CV from '../components/CV'
 import SkillsBar from '../components/SkillsBar'
 import Layout from '../components/Layout'

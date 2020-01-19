@@ -11,6 +11,7 @@ class ArticleCard extends Component {
 
     this.gearHover = this.gearHover.bind(this)
     this.gearHoverOut = this.gearHoverOut.bind(this)
+    
     this.state = {
       gearsRotate: false
     }
@@ -46,23 +47,25 @@ class ArticleCard extends Component {
 
   render () {
     const { article } = this.props
-
-    return <li className="c-articles__list">
-      <Link href={`/article?slug=${article.slug}`} as={`/articles/${article.slug}`}><a className="c-articles__list--link" onMouseOver={this.gearHover} onMouseOut={this.gearHoverOut}>
-        <img className={`c-articles__list--hero ${this.heroTransition()}`} src={`${process.env.BACKEND_URL}${article.previewImage}`} />
-        <div className="c-article__list__inner">
-          <h4 className="c-articles__list__inner--title">{article.title}</h4>
-          <div className="c-articles__list__inner--body"><MarkdownPreview value={this.truncate(article.body)} /></div>
-          <div className="c-articles__list__inner--footer">
-            <p className="c-articles__list__inner--footer-date">{moment(article.createdAt).format('MMMM Do YYYY')}</p>
-            <div className="c-articles__list__inner--footer-gears">
-              <img className={`c-articles__list__inner--footer-gears_big ${this.rotateBig()}`} src="/static/gear.png" />
-              <img className={`c-articles__list__inner--footer-gears_small ${this.rotateSmall()}`} src="/static/gear.png" />
-            </div> 
-          </div>   
-        </div>
-      </a></Link>
-    </li>
+    
+    return (
+      <li className="c-articles__list">
+        <Link href={`/article?slug=${article.slug}`} as={`/articles/${article.slug}`}><a className="c-articles__list--link" onMouseOver={this.gearHover} onMouseOut={this.gearHoverOut}>
+          <img className={`c-articles__list--hero ${this.heroTransition()}`} src={`${process.env.BACKEND_URL}${article.previewImage}`} />
+          <div className="c-article__list__inner">
+            <h4 className="c-articles__list__inner--title">{article.title}</h4>
+            <div className="c-articles__list__inner--body"><MarkdownPreview value={this.truncate(article.body)} /></div>
+            <div className="c-articles__list__inner--footer">
+              <p className="c-articles__list__inner--footer-date">{moment(article.createdAt).format('MMMM Do YYYY')}</p>
+              <div className="c-articles__list__inner--footer-gears">
+                <img className={`c-articles__list__inner--footer-gears_big ${this.rotateBig()}`} src="/static/gear.png" />
+                <img className={`c-articles__list__inner--footer-gears_small ${this.rotateSmall()}`} src="/static/gear.png" />
+              </div> 
+            </div>   
+          </div>
+        </a></Link>
+      </li>
+    )
   }
 }
 
