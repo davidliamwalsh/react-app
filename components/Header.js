@@ -24,7 +24,7 @@ class Header extends Component {
             <Navbar />
             <div className="c-header__container">
               <div className="c-header__intro">
-                <ScrollAnimation animateIn='wobble' initiallyVisible={true}>
+                <ScrollAnimation duration={1.5} animateOnce={true} animateIn='zoomInDown'>
                   <h3 className="c-header__name">DAVID<span>/</span>WALSH</h3>
                 </ScrollAnimation>
                 <h4 className="c-header__title">Web Developer</h4>

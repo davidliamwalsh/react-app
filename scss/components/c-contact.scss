@@ -7,22 +7,72 @@
     margin-top: 2em;
     text-align: center;
     font-size: 18px;
+    position: relative;
+    animation-timing-function: ease-in;
+    animation: contactName 1.5s;
   }
 
-  &__form--container {
-    margin: auto;
-    width: 90%;
-    margin-top: 2em;
+  &__form {
+    &--container {
+      margin: auto;
+      width: 90%;
+      margin-top: 2em;
+  
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+    }
 
-    input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
+    &__name {
+      &--label {
+        position: relative;
+        animation-timing-function: ease-in;
+        animation: contactName 2s;
+      }
+      &--input {
+        position: relative;
+        animation-timing-function: ease-in;
+        animation: contactName 2.5s;
+      }
+    }
+
+    &__email {
+      &--label {
+        position: relative;
+        animation-timing-function: ease-in;
+        animation: contactName 3s;
+      }
+      &--input {
+        position: relative;
+        animation-timing-function: ease-in;
+        animation: contactName 3.5s;
+      }
+    }
+
+    &__body {
+      &--label {
+        position: relative;
+        animation-timing-function: ease-in;
+        animation: contactName 4s;
+      }
+      &--input {
+        position: relative;
+        animation-timing-function: ease-in;
+        animation: contactName 4.5s;
+      }
+    }
+
+    &__submit {
+        position: relative;
+        animation-timing-function: ease-in;
+        animation: contactName 5s;
     }
   }
 }
