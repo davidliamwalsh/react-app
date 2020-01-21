@@ -21,8 +21,6 @@ class CV extends Component {
         </ul>
       </ScrollAnimation>
         
-    
-      
       <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <ul className="c-about__cv--item">
           <li className="c-about__cv--item-company">
