@@ -1,8 +1,8 @@
 import { Component } from 'react'
 import Link from 'next/link'
 
+import ScrollAnimation from 'react-animate-on-scroll';
 import { MarkdownPreview } from 'react-marked-markdown'
-
 import moment from 'moment'
 
 class ArticleCard extends Component {
@@ -49,7 +49,9 @@ class ArticleCard extends Component {
     const { article } = this.props
     
     return (
-      <li className="c-articles__list">
+      <ScrollAnimation duration={1.5} animateIn='flipInY'
+      animateOut='flipOutY'>
+        <li className="c-articles__list">
         <Link href={`/article?slug=${article.slug}`} as={`/articles/${article.slug}`}><a className="c-articles__list--link" onMouseOver={this.gearHover} onMouseOut={this.gearHoverOut}>
           <img className={`c-articles__list--hero ${this.heroTransition()}`} src={`${process.env.BACKEND_URL}${article.previewImage}`} />
           <div className="c-article__list__inner">
@@ -65,6 +67,8 @@ class ArticleCard extends Component {
           </div>
         </a></Link>
       </li>
+      </ScrollAnimation>
+      
     )
   }
 }

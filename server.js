@@ -28,7 +28,7 @@ app.prepare()
   })
 
   server.post('/contact-me', (req, res) => {
-    let client = new postmark.ServerClient("21747f58-40c1-4771-bdbb-77f5be294d6b");
+    let client = new postmark.ServerClient(`${process.env.SERVER_TOKEN}`);
     
     client.sendEmail(
       {
