@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import { withRouter } from 'next/router'
 
+import ScrollAnimation from 'react-animate-on-scroll';
 import Navbar from './Navbar'
 import SignupForm from './SignupForm'
 
@@ -23,7 +24,9 @@ class Header extends Component {
             <Navbar />
             <div className="c-header__container">
               <div className="c-header__intro">
-                <h3 className="c-header__name">DAVID<span>/</span>WALSH</h3>
+                <ScrollAnimation animateIn='wobble' initiallyVisible={true}>
+                  <h3 className="c-header__name">DAVID<span>/</span>WALSH</h3>
+                </ScrollAnimation>
                 <h4 className="c-header__title">Web Developer</h4>
               </div>
               <SignupForm />

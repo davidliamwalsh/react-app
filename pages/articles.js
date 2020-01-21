@@ -36,7 +36,8 @@ class Articles extends Component {
             </div>
           </Layout>
         } else {
-          return <Layout {...this.props}>
+          return (
+            <Layout {...this.props}>
             <div className='c-container'>
               <div className="c-articles__gallery">
                 <h2 className="c-main__head">My Articles</h2> 
@@ -49,6 +50,7 @@ class Articles extends Component {
               </div>
             </div>
           </Layout>
+          )
         }
       }}
     </Query>
