@@ -1,6 +1,12 @@
 .contact {
 
   @keyframes contactName {
-    
+    from {
+      left: -800px;
+      opacity: 0.0;
+    }
+    to {
+      right: 0px;
+    }
   }
 }
