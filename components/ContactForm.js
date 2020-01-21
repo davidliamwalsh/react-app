@@ -56,20 +56,20 @@ class ContactForm extends Component {
         </FlashMessage> : '' }
       <form onSubmit={this.contactForm}>
 
-        <div className="c-contact-form">
+        <div className="c-contact__form">
 
-          <label htmlFor="message_name">Name</label>
-          <input className="c-contact-form__input" placeholder="Your Name" type="text" name="name" id="message_name" />
+          <label className="c-contact__form__name--label" htmlFor="message_name">Name</label>
+          <input className="c-contact__form__name--input" placeholder="Your Name" type="text" name="name" id="message_name" />
           
-          <label htmlFor="message_email">Email</label>
-          <input className="c-contact-form__input" placeholder="Your e-mail address" type="text" name="email" id="message_email" />
+          <label className="c-contact__form__email--label" htmlFor="message_email">Email</label>
+          <input className="c-contact__form__email--input" placeholder="Your e-mail address" type="text" name="email" id="message_email" />
 
-          <label htmlFor="message_body">Body</label>
-          <textarea rows="10" className="c-contact-form__input" placeholder="Please type your message" name="body" id="message_body"></textarea>
+          <label className="c-contact__form__body--label" htmlFor="message_body">Body</label>
+          <textarea rows="10" className="c-contact__form__body--input" placeholder="Please type your message" name="body" id="message_body"></textarea>
 
         </div>
 
-        <input type="submit" className="o-submit__btn" />
+        <input type="submit" className="o-submit__btn c-contact__form__submit" />
 
       </form>
       
