@@ -18,34 +18,34 @@
     justify-content: center;
     flex-direction: column;
     min-height: 80vh;
-  }
-
-  &__intro {
     text-align: center;
     color: $light;
-    line-height: 2em;
   }
 
   &__name {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-    span {
-      color: $danger;
+    &--text {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2em;
+      letter-spacing: 3px;
+      span {
+        color: $danger;
+      }
     }
   }
-
+  
   &__title {
-    font-size: 1.2em;
-    letter-spacing: 6px;
-    line-height: 1em;
-    border-right: .15em solid $danger;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 2.5s steps(12, end),
-    blink-caret .75s step-end infinite;
+    &--text {
+      font-size: 1.2em;
+      letter-spacing: 3px;
+      border-right: .15em solid $danger;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2.5s steps(12, end),
+      blink-caret .75s step-end infinite;
+    }
   }
-
+  
   &__signup {
     padding-top: 2.5em;
     margin: 0 auto;
@@ -114,15 +114,18 @@
     
     &__name {
       font-weight: bold;
+      &--text {
+        font-size: 3em;
+        letter-spacing: 6px;
+      }
     }
 
-    &__title {
-      font-size: 1.2em;
+    &__title--text {
+      font-size: 1.5em;
       letter-spacing: 6px;
     }
 
     &__signup__form {
-      
       &--field {
         width: 350px;
 

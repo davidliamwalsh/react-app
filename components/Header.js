@@ -23,11 +23,13 @@ class Header extends Component {
           <div className="c-header__image">
             <Navbar />
             <div className="c-header__container">
-              <div className="c-header__intro">
+              <div className="c-header__name">
                 <ScrollAnimation duration={1.5} animateOnce={true} animateIn='zoomInDown'>
-                  <h3 className="c-header__name">DAVID<span>/</span>WALSH</h3>
+                  <h3 className="c-header__name--text">DAVID<span>/</span>WALSH</h3>
                 </ScrollAnimation>
-                <h4 className="c-header__title">Web Developer</h4>
+              </div>
+              <div className="c-header___title">
+                <h4 className="c-header__title--text">Web Developer</h4>
               </div>
               <SignupForm />
               <div className="c-header__arrow" onClick={this.scrollClick}>
