@@ -1,28 +1,53 @@
 .c-skills {
 
   @keyframes html {
-    from {width: 15%;}
-    to {width: 95%;}
+    from {
+      width: 15%;
+      opacity: 0;
+    }
+    to {
+      width: 95%;
+    }
   }
 
   @keyframes css {
-    from {width: 15%;}
-    to {width: 80%;}
+    from {
+      width: 15%;
+      opacity: 0;
+    }
+    to {
+      width: 80%;
+    }
   }
 
   @keyframes js {
-    from {width: 15%;}
-    to {width: 64%;}
+    from {
+      width: 15%;
+      opacity: 0;
+    }
+    to {
+      width: 64%;
+    }
   }
 
   @keyframes react {
-    from {width: 15%;}
-    to {width: 25%;}
+    from {
+      width: 15%;
+      opacity: 0;
+    }
+    to {
+      width: 35%;
+    }
   }
 
   @keyframes ror {
-    from {width: 15%;}
-    to {width: 50%;}
+    from {
+      width: 15%;
+      opacity: 0;
+    }
+    to {
+      width: 40%;
+    }
   }
 
 }

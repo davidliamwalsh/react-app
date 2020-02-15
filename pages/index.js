@@ -60,7 +60,6 @@ class Index extends Component {
       }}
     </Query>
   }
-
 }
 
 export default withData(Index)

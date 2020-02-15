@@ -32,14 +32,14 @@ class SkillsBar extends Component {
         <div className="c-skills__container__wrapper">
           <div className="c-skills__container__wrapper--react">
             React
-            <span className="c-skills__container__wrapper--right">25%</span>
+            <span className="c-skills__container__wrapper--right">35%</span>
           </div>
         </div>
 
         <div className="c-skills__container__wrapper">
           <div className="c-skills__container__wrapper--ror">
             RoR
-            <span className="c-skills__container__wrapper--right">50%</span>
+            <span className="c-skills__container__wrapper--right">40%</span>
           </div>
         </div>
       </div>
