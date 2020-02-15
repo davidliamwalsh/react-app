@@ -19,12 +19,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
+    display: none;
     transition: opacity 1s;
   }
 
   &__list.active {
-    opacity: 1;
+    display: block;
   }
 
   &__item {

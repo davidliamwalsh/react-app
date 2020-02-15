@@ -1,7 +1,5 @@
 import { Component } from 'react'
 
-import ScrollAnimation from 'react-animate-on-scroll';
-
 class Slider extends Component {
 
   constructor (props) {
@@ -32,60 +30,50 @@ class Slider extends Component {
 
   sliderData () {
     return [
-      <ScrollAnimation duration={1} animateIn="fadeIn">
-        <div className="c-slider__item">
-          <h4>
-            <a href="https://davidliamwalsh.github.io/welford/" className="c-slider__item--link">Welford</a>
-          </h4>
-          <img src="/static/welford-laptop.png" className="c-slider__item--image-laptop" />
-          <img src="/static/welford-tablet.png" className="c-slider__item--image-tablet" />
-          <img src="/static/welford-mobile.png" className="c-slider__item--image-mobile" />
-        </div>
-      </ScrollAnimation>,
+      <div className="c-slider__item">
+        <h4>
+          <a href="https://davidliamwalsh.github.io/welford-landing-page/" className="c-slider__item--link">Welford</a>
+        </h4>
+        <img src="/static/welford-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/welford-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/welford-mobile.png" className="c-slider__item--image-mobile" />
+      </div>,
 
-      <ScrollAnimation duration={1} animateIn="fadeIn">
-        <div className="c-slider__item"> 
-          <h4>
-            <a href="https://davidliamwalsh.github.io/etchasketch/" className="c-slider__item--link">Etcha Sketch</a>
-          </h4>
-          <img src="/static/etcha-laptop.png" className="c-slider__item--image-laptop" />
-          <img src="/static/etcha-tablet.png" className="c-slider__item--image-tablet" />
-          <img src="/static/etcha-mobile.png" className="c-slider__item--image-mobile" />
-      </div>
-      </ScrollAnimation>,
+      <div className="c-slider__item"> 
+        <h4>
+          <a href="https://davidliamwalsh.github.io/etchasketch/" className="c-slider__item--link">Etcha Sketch</a>
+        </h4>
+        <img src="/static/etcha-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/etcha-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/etcha-mobile.png" className="c-slider__item--image-mobile" />
+      </div>,
 
-      <ScrollAnimation duration={1} animateIn="fadeIn">
-        <div className="c-slider__item">
-          <h4>
-            <a href="https://davidwalsh-blogger.herokuapp.com/" className="c-slider__item--link">Blogger</a>
-          </h4>
-          <img src="/static/blogger-laptop.png" className="c-slider__item--image-laptop" />
-          <img src="/static/blogger-tablet.png" className="c-slider__item--image-tablet" />
-          <img src="/static/blogger-mobile.png" className="c-slider__item--image-mobile" />
-      </div>
-      </ScrollAnimation>,
+      <div className="c-slider__item">
+        <h4>
+          <a href="https://react-blogger.herokuapp.com/" className="c-slider__item--link">Blogger</a>
+        </h4>
+        <img src="/static/blogger-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/blogger-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/blogger-mobile.png" className="c-slider__item--image-mobile" />
+      </div>,
 
-      <ScrollAnimation duration={1} animateIn="fadeIn">
-        <div className="c-slider__item"> 
-          <h4>
-            <a href="https://davidliamwalsh.github.io/rockpaperscissors/" className="c-slider__item--link">Rock Paper Scissors</a>
-          </h4>
-          <img src="/static/rockpaper-laptop.png" className="c-slider__item--image-laptop" />
-          <img src="/static/rockpaper-tablet.png" className="c-slider__item--image-tablet" />
-          <img src="/static/rockpaper-mobile.png" className="c-slider__item--image-mobile" />
-        </div>
-      </ScrollAnimation>,
-
-      <ScrollAnimation duration={1} animateIn="fadeIn">
-        <div className="c-slider__item">
-          <h4>
-            <a href="https://davidliamwalsh.github.io/calculator/" className="c-slider__item--link">Calculator</a>
-          </h4>
-          <img src="/static/calculator-laptop.png" className="c-slider__item--image-laptop" />
-          <img src="/static/calculator-tablet.png" className="c-slider__item--image-tablet" />
-          <img src="/static/calculator-mobile.png" className="c-slider__item--image-mobile" />
-      </div>
-      </ScrollAnimation>,
+      <div className="c-slider__item"> 
+        <h4>
+          <a href="https://davidliamwalsh.github.io/rockpaperscissors/" className="c-slider__item--link">Rock Paper Scissors</a>
+        </h4>
+        <img src="/static/rockpaper-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/rockpaper-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/rockpaper-mobile.png" className="c-slider__item--image-mobile" />
+      </div>,
+      
+      <div className="c-slider__item">
+        <h4>
+          <a href="https://davidliamwalsh.github.io/calculator/" className="c-slider__item--link">Calculator</a>
+        </h4>
+        <img src="/static/calculator-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/calculator-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/calculator-mobile.png" className="c-slider__item--image-mobile" />
+      </div>,
 
     ].map((item, index) => {
       let computedClass = index === (this.state.activeIndex) ? 'c-slider__list active' : 'c-slider__list';
