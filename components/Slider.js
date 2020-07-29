@@ -32,6 +32,24 @@ class Slider extends Component {
     return [
       <div className="c-slider__item">
         <h4>
+          <a href="https://space-x-front.herokuapp.com/" className="c-slider__item--link">Space X API</a>
+        </h4>
+        <img src="/static/spacex-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/spacex-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/spacex-mobile.png" className="c-slider__item--image-mobile" />
+      </div>,
+
+      <div className="c-slider__item">
+        <h4>
+          <a href="https://ldcdecorating-front.herokuapp.com/" className="c-slider__item--link">LDC App</a>
+        </h4>
+        <img src="/static/ldcapp-laptop.png" className="c-slider__item--image-laptop" />
+        <img src="/static/ldcapp-tablet.png" className="c-slider__item--image-tablet" />
+        <img src="/static/ldcapp-mobile.png" className="c-slider__item--image-mobile" />
+      </div>,
+
+      <div className="c-slider__item">
+        <h4>
           <a href="https://davidliamwalsh.github.io/welford-landing-page/" className="c-slider__item--link">Welford</a>
         </h4>
         <img src="/static/welford-laptop.png" className="c-slider__item--image-laptop" />
