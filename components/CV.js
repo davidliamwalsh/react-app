@@ -8,6 +8,20 @@ class CV extends Component {
       <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <ul className="c-about__cv--item">
           <li className="c-about__cv--item-company">
+            Freelance
+          </li>
+          <li className="c-about__cv--item-title">
+            FullStack Developer
+          </li>
+          <li className="c-about__cv--item-description">
+            Developing the full cycle of a website. Working on a stack of React, Ruby, and PostgreSQL. Creating data driven platforms powered by Ruby and GraphQL. 
+          </li>
+        </ul>
+      </ScrollAnimation>
+
+      <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+        <ul className="c-about__cv--item">
+          <li className="c-about__cv--item-company">
             ProCoders
           </li>
           <li className="c-about__cv--item-title">
