@@ -41,7 +41,7 @@ class Index extends Component {
           return <Layout {...this.props}>
             <div className='c-container'>
               <div className="c-articles">
-                <h2 className="c-main__head">My Articles</h2> 
+                <h2 className="c-main__head">Articles</h2> 
                 <hr className="c-main__head-line" />
                 <div className="c-container-flex">
                   {data.articles.map((article, index) => {
