@@ -7,6 +7,11 @@
   word-spacing: .2rem;
 }
 
+body {
+  margin: auto;
+  max-width: 1600px;
+}
+
 textarea:focus, input:focus{
   outline: none;
 }
