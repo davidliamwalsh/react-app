@@ -7,12 +7,8 @@
     max-width: 1000px;
     margin: auto;
     position: relative;
-  }
-  
-  &__container  {
-    padding-bottom: 60%;
     background: #ffff;
-    overflow: hidden;
+    padding-bottom: 130%;
   }
 
   &__list {
@@ -28,6 +24,7 @@
   }
 
   &__item {
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex; 
@@ -44,23 +41,25 @@
     }
 
     &--image {
-      &-laptop {
+      &-mobile {
+        position: relative;
         display: block;
-        width: 70%;
+        width: 80%;
       }
   
       &-tablet,
-      &-mobile {
+      &-laptop {
         display: none;
       }
     }
   }
 }
 
-@media screen and (max-width: $laptop-break) {
-  .c-slider {
 
-    &__container {
+@media screen and (min-width: $tablet-break) {
+  .c-slider {
+    
+    &__outer {  
       padding-bottom: 85%;
     }
 
@@ -78,21 +77,21 @@
   }
 }
 
-@media screen and (max-width: $tablet-break) {
+@media screen and (min-width: $laptop-break) {
   .c-slider {
-
-    &__container {
-      padding-bottom: 130%;
+    
+    &__outer  {
+    padding-bottom: 60%;
     }
 
     &__item--image {
-      &-mobile {
+      &-laptop {
         display: block;
-        width: 80%;
+        width: 70%;
       }
   
       &-tablet,
-      &-laptop {
+      &-mobile {
         display: none;
       }
     }

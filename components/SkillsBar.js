@@ -18,7 +18,7 @@ class SkillsBar extends Component {
         <div className="c-skills__container__wrapper">
           <div className="c-skills__container__wrapper--css">
             CSS
-            <span className="c-skills__container__wrapper--right">80%</span>
+            <span className="c-skills__container__wrapper--right">85%</span>
           </div>
         </div>
 
@@ -40,6 +40,13 @@ class SkillsBar extends Component {
           <div className="c-skills__container__wrapper--ror">
             RoR
             <span className="c-skills__container__wrapper--right">40%</span>
+          </div>
+        </div>
+
+        <div className="c-skills__container__wrapper">
+          <div className="c-skills__container__wrapper--php">
+            PHP
+            <span className="c-skills__container__wrapper--right">15%</span>
           </div>
         </div>
       </div>

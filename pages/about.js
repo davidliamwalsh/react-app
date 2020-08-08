@@ -18,7 +18,7 @@ class About extends Component {
           </div>
 
           <div className="c-about__intro">
-            Hi, my name is David Walsh! I am from Leeds (UK), and I have a passion for Web Development! I am confident hand coding HTML5, CSS3 (Sass), and JavaScript. I have experience with jQuery, Ruby and RoR, TDD, OOP, using Version Control (GIT), Webpack, Bootstrap, and Photoshop. More recently I am working website security with JWT and Rack middleware.<br />
+            I am confident hand coding HTML5, CSS3 (Sass), JavaScript, React, Ruby and RoR. I have experience with jQuery, GraphQL API, TDD, OOP, JWT, Version Control (GIT), Webpack, Bootstrap, and Photoshop. Previous experience with Liquid scripting when I was managing a Shopify site. More recently I am working with PHP, MySQL and WordPress to become a more rounded developer.<br />
             Click<Link href="/static/davidDeveloper.docx"><a>here</a></Link>for an up to date copy of my CV, or you can view a brief overview below:
           </div>
 

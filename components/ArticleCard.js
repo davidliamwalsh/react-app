@@ -49,8 +49,7 @@ class ArticleCard extends Component {
     const { article } = this.props
     
     return (
-      <ScrollAnimation duration={1.5} animateIn='flipInY'
-      animateOut='flipOutY'>
+      <ScrollAnimation duration={1.5} animateIn='flipInX'>
         <li className="c-articles__list">
         <Link href={`/article?slug=${article.slug}`} as={`/articles/${article.slug}`}><a className="c-articles__list--link" onMouseOver={this.gearHover} onMouseOut={this.gearHoverOut}>
           <img className={`c-articles__list--hero ${this.heroTransition()}`} src={`${process.env.BACKEND_URL}${article.previewImage}`} />
