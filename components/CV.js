@@ -8,6 +8,22 @@ class CV extends Component {
       <ScrollAnimation animateOnce={true} animateIn="fadeIn">
         <ul className="c-about__cv--item">
           <li className="c-about__cv--item-company">
+            Drummond Central Ltd 
+          </li>
+          <li className="c-about__cv--item-title">
+            Front-end Developer
+          </li>
+          <li className="c-about__cv--item-description">
+             Developing pixel perfect designs for clients using HTML CSS/SCSS and JavaScript. Also had the opportunity to work with React on a Raptor 
+             project, and C# with Newcastle College. Other builds consisted of customizing themes from Umbraco builds using styling and Jquery. 
+             A ticketing process was adopted to manage work, with stand ups every other day.
+          </li>
+        </ul>
+      </ScrollAnimation>
+    
+      <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+        <ul className="c-about__cv--item">
+          <li className="c-about__cv--item-company">
             Freelance
           </li>
           <li className="c-about__cv--item-title">
